@@ -1,13 +1,16 @@
 #include "SAT.h"
 #include <iostream>
 
-SAT::SAT(int n_ops) : n(n_ops) {
+SAT::SAT(int n_ops,std::ostream& out_) : n(n_ops), out(out_) {
     before.resize(n, std::vector<Minisat::Var>(n, Minisat::var_Undef));
     B.clear();
     R.clear();
 }
 
-void SAT::encode_resource(const std::vector<int>& ops_idx, int limit) {
+void SAT::encode_resource(const std::vector<int>& ops_idx, int limit,
+                          const std::vector<int>* LB,
+                          const std::vector<int>* UB,
+                          const std::vector<int>* DUR) {
     int m = ops_idx.size();
     int L = limit;
     if (m == 0 || L <= 0) return;
@@ -52,6 +55,32 @@ void SAT::encode_resource(const std::vector<int>& ops_idx, int limit) {
         int i = ops_idx[a];
         for (int b = a + 1; b < m; ++b) {
             int j = ops_idx[b];
+
+            // ---------- LB/UB/DUR 剪枝检查（保守） ----------
+            if (LB && UB && DUR) {
+                // 检查索引有效性（防御性）
+                if ((int)LB->size() > i && (int)LB->size() > j &&
+                    (int)UB->size() > i && (int)UB->size() > j &&
+                    (int)DUR->size() > i && (int)DUR->size() > j) {
+                    int di = (*DUR)[i];
+                    int dj = (*DUR)[j];
+                    // 保守取 dur >= 1，如果输入可能为0，确保最小为1
+                    if (di <= 0) di = 1;
+                    if (dj <= 0) dj = 1;
+                    // 判定：若 i 在其最晚开始并完成仍不影响 j 的最早开始，
+                    // 或 j 在其最晚开始并完成仍不影响 i 的最早开始，
+                    // 则两者无重叠可能，可以跳过对它们的 ordering 编码。
+                    if ( (*UB)[i] + di <= (*LB)[j] || (*UB)[j] + dj <= (*LB)[i] ) {
+                        // debug 输出，便于观测剪枝效果；需要时删掉或改为日志记录
+                        out << "[SAT] prune pair (i=" << i << ", j=" << j
+                                  << ") by LB/UB/DUR: UB[i]+" << di << "=" << ((*UB)[i] + di)
+                                  << " <= LB[j]=" << (*LB)[j] << " OR UB[j]+" << dj
+                                  << "=" << ((*UB)[j] + dj) << " <= LB[i]=" << (*LB)[i] << std::endl;
+                        continue; // 跳过此对
+                    }
+                }
+                // 若 LB/UB/DUR 尺寸不够或无效，则退回不剪枝
+            }
 
             // R_ij 只创建一次
             if (R[i][j] == Minisat::var_Undef) {
@@ -115,6 +144,7 @@ void SAT::encode_resource(const std::vector<int>& ops_idx, int limit) {
         }
     }
 }
+
 
 ////cpp
 bool SAT::solve() {

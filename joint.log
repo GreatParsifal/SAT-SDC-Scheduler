@@ -1,909 +1,1542 @@
 
-[JOINT] Trying makespan mid = 169
-[DFG] Stmt 0: shift_left
-[DFG] Stmt 1: shift_left
-[DFG] Stmt 2: load
-[DFG] Stmt 3: mulf
-[DFG] Stmt 4: addf
+[JOINT] Trying makespan mid = 86
+[DFG] Stmt 0: muli
+[DFG] Stmt 1: load
+[DFG] Stmt 2: shift_left
+[DFG] Stmt 3: muli
+[DFG] Stmt 4: load
 [DFG] Stmt 5: shift_left
-[DFG] Stmt 6: shift_left
+[DFG] Stmt 6: muli
 [DFG] Stmt 7: load
-[DFG] Stmt 8: mulf
-[DFG] Stmt 9: addf
-[DFG] Stmt 10: shift_left
-[DFG] Stmt 11: shift_left
-[DFG] Stmt 12: addi
-[DFG] Stmt 13: load
-[DFG] Stmt 14: mulf
-[DFG] Stmt 15: addf
-[DFG] Stmt 16: shift_left
-[DFG] Stmt 17: shift_left
-[DFG] Stmt 18: addi
-[DFG] Stmt 19: load
-[DFG] Stmt 20: mulf
-[DFG] Stmt 21: addf
-[DFG] Stmt 22: shift_left
-[DFG] Stmt 23: shift_left
-[DFG] Stmt 24: addi
-[DFG] Stmt 25: load
-[DFG] Stmt 26: mulf
-[DFG] Stmt 27: addf
-[DFG] Stmt 28: shift_left
+[DFG] Stmt 8: subf
+[DFG] Stmt 9: shift_left
+[DFG] Stmt 10: addi
+[DFG] Stmt 11: muli
+[DFG] Stmt 12: load
+[DFG] Stmt 13: addf
+[DFG] Stmt 14: shift_left
+[DFG] Stmt 15: muli
+[DFG] Stmt 16: load
+[DFG] Stmt 17: subf
+[DFG] Stmt 18: mulf
+[DFG] Stmt 19: subf
+[DFG] Stmt 20: muli
+[DFG] Stmt 21: store
+[DFG] Stmt 22: muli
+[DFG] Stmt 23: load
+[DFG] Stmt 24: shift_left
+[DFG] Stmt 25: muli
+[DFG] Stmt 26: addi
+[DFG] Stmt 27: load
+[DFG] Stmt 28: subf
 [DFG] Stmt 29: shift_left
 [DFG] Stmt 30: addi
-[DFG] Stmt 31: load
-[DFG] Stmt 32: mulf
+[DFG] Stmt 31: muli
+[DFG] Stmt 32: load
 [DFG] Stmt 33: addf
 [DFG] Stmt 34: shift_left
-[DFG] Stmt 35: shift_left
-[DFG] Stmt 36: addi
-[DFG] Stmt 37: load
+[DFG] Stmt 35: muli
+[DFG] Stmt 36: load
+[DFG] Stmt 37: subf
 [DFG] Stmt 38: mulf
-[DFG] Stmt 39: addf
-[DFG] Stmt 40: shift_left
-[DFG] Stmt 41: shift_left
-[DFG] Stmt 42: addi
-[DFG] Stmt 43: load
-[DFG] Stmt 44: mulf
-[DFG] Stmt 45: addf
-[DFG] Stmt 46: shift_left
-[DFG] Stmt 47: shift_left
-[DFG] Stmt 48: addi
-[DFG] Stmt 49: load
-[DFG] Stmt 50: mulf
-[DFG] Stmt 51: addf
-[DFG] Stmt 52: shift_left
-[DFG] Stmt 53: shift_left
-[DFG] Stmt 54: addi
-[DFG] Stmt 55: load
-[DFG] Stmt 56: mulf
-[DFG] Stmt 57: addf
-[DFG] Stmt 58: shift_left
-[DFG] Stmt 59: shift_left
-[DFG] Stmt 60: addi
-[DFG] Stmt 61: load
-[DFG] Stmt 62: mulf
-[DFG] Stmt 63: addf
-[DFG] Stmt 64: shift_left
-[DFG] Stmt 65: shift_left
-[DFG] Stmt 66: addi
-[DFG] Stmt 67: load
-[DFG] Stmt 68: mulf
-[DFG] Stmt 69: addf
-[DFG] Stmt 70: shift_left
-[DFG] Stmt 71: shift_left
-[DFG] Stmt 72: addi
-[DFG] Stmt 73: load
-[DFG] Stmt 74: mulf
-[DFG] Stmt 75: addf
-[DFG] Stmt 76: shift_left
-[DFG] Stmt 77: shift_left
-[DFG] Stmt 78: addi
-[DFG] Stmt 79: load
-[DFG] Stmt 80: mulf
-[DFG] Stmt 81: addf
-[DFG] Stmt 82: shift_left
-[DFG] Stmt 83: shift_left
-[DFG] Stmt 84: addi
-[DFG] Stmt 85: load
-[DFG] Stmt 86: mulf
-[DFG] Stmt 87: addf
-[DFG] Stmt 88: shift_left
-[DFG] Stmt 89: shift_left
-[DFG] Stmt 90: addi
-[DFG] Stmt 91: load
-[DFG] Stmt 92: mulf
-[DFG] Stmt 93: addf
-[DFG] Stmt 94: store
-[DFG] Stmt 95: mulf
-[DFG] Stmt 96: addf
-[DFG] Stmt 97: mulf
-[DFG] Stmt 98: addf
-[DFG] Stmt 99: mulf
-[DFG] Stmt 100: addf
-[DFG] Stmt 101: mulf
-[DFG] Stmt 102: addf
-[DFG] Stmt 103: mulf
-[DFG] Stmt 104: addf
-[DFG] Stmt 105: mulf
-[DFG] Stmt 106: addf
-[DFG] Stmt 107: mulf
-[DFG] Stmt 108: addf
+[DFG] Stmt 39: subf
+[DFG] Stmt 40: muli
+[DFG] Stmt 41: store
+[DFG] Stmt 42: muli
+[DFG] Stmt 43: addi
+[DFG] Stmt 44: load
+[DFG] Stmt 45: shift_left
+[DFG] Stmt 46: muli
+[DFG] Stmt 47: addi
+[DFG] Stmt 48: load
+[DFG] Stmt 49: subf
+[DFG] Stmt 50: shift_left
+[DFG] Stmt 51: addi
+[DFG] Stmt 52: muli
+[DFG] Stmt 53: addi
+[DFG] Stmt 54: load
+[DFG] Stmt 55: addf
+[DFG] Stmt 56: shift_left
+[DFG] Stmt 57: muli
+[DFG] Stmt 58: addi
+[DFG] Stmt 59: load
+[DFG] Stmt 60: subf
+[DFG] Stmt 61: mulf
+[DFG] Stmt 62: subf
+[DFG] Stmt 63: muli
+[DFG] Stmt 64: addi
+[DFG] Stmt 65: store
+[DFG] Stmt 66: muli
+[DFG] Stmt 67: addi
+[DFG] Stmt 68: load
+[DFG] Stmt 69: shift_left
+[DFG] Stmt 70: muli
+[DFG] Stmt 71: addi
+[DFG] Stmt 72: load
+[DFG] Stmt 73: subf
+[DFG] Stmt 74: shift_left
+[DFG] Stmt 75: addi
+[DFG] Stmt 76: muli
+[DFG] Stmt 77: addi
+[DFG] Stmt 78: load
+[DFG] Stmt 79: addf
+[DFG] Stmt 80: shift_left
+[DFG] Stmt 81: muli
+[DFG] Stmt 82: addi
+[DFG] Stmt 83: load
+[DFG] Stmt 84: subf
+[DFG] Stmt 85: mulf
+[DFG] Stmt 86: subf
+[DFG] Stmt 87: muli
+[DFG] Stmt 88: addi
+[DFG] Stmt 89: store
+[DFG] Stmt 90: muli
+[DFG] Stmt 91: addi
+[DFG] Stmt 92: load
+[DFG] Stmt 93: shift_left
+[DFG] Stmt 94: muli
+[DFG] Stmt 95: addi
+[DFG] Stmt 96: load
+[DFG] Stmt 97: subf
+[DFG] Stmt 98: shift_left
+[DFG] Stmt 99: addi
+[DFG] Stmt 100: muli
+[DFG] Stmt 101: addi
+[DFG] Stmt 102: load
+[DFG] Stmt 103: addf
+[DFG] Stmt 104: shift_left
+[DFG] Stmt 105: muli
+[DFG] Stmt 106: addi
+[DFG] Stmt 107: load
+[DFG] Stmt 108: subf
 [DFG] Stmt 109: mulf
-[DFG] Stmt 110: addf
-[DFG] Stmt 111: mulf
-[DFG] Stmt 112: addf
-[DFG] Stmt 113: mulf
-[DFG] Stmt 114: addf
-[DFG] Stmt 115: mulf
-[DFG] Stmt 116: addf
-[DFG] Stmt 117: mulf
-[DFG] Stmt 118: addf
-[DFG] Stmt 119: mulf
-[DFG] Stmt 120: addf
-[DFG] Stmt 121: mulf
-[DFG] Stmt 122: addf
-[DFG] Stmt 123: mulf
-[DFG] Stmt 124: addf
-[DFG] Stmt 125: mulf
-[DFG] Stmt 126: addf
-[DFG] Stmt 127: shift_left
-[DFG] Stmt 128: addi
-[DFG] Stmt 129: shift_left
-[DFG] Stmt 130: load
+[DFG] Stmt 110: subf
+[DFG] Stmt 111: muli
+[DFG] Stmt 112: addi
+[DFG] Stmt 113: store
+[DFG] Stmt 114: muli
+[DFG] Stmt 115: load
+[DFG] Stmt 116: shift_left
+[DFG] Stmt 117: addi
+[DFG] Stmt 118: muli
+[DFG] Stmt 119: load
+[DFG] Stmt 120: shift_left
+[DFG] Stmt 121: addi
+[DFG] Stmt 122: muli
+[DFG] Stmt 123: load
+[DFG] Stmt 124: subf
+[DFG] Stmt 125: shift_left
+[DFG] Stmt 126: addi
+[DFG] Stmt 127: muli
+[DFG] Stmt 128: load
+[DFG] Stmt 129: addf
+[DFG] Stmt 130: subf
 [DFG] Stmt 131: mulf
-[DFG] Stmt 132: addf
-[DFG] Stmt 133: shift_left
-[DFG] Stmt 134: addi
-[DFG] Stmt 135: shift_left
+[DFG] Stmt 132: subf
+[DFG] Stmt 133: muli
+[DFG] Stmt 134: store
+[DFG] Stmt 135: muli
 [DFG] Stmt 136: load
-[DFG] Stmt 137: mulf
-[DFG] Stmt 138: addf
-[DFG] Stmt 139: shift_left
+[DFG] Stmt 137: shift_left
+[DFG] Stmt 138: addi
+[DFG] Stmt 139: muli
 [DFG] Stmt 140: addi
-[DFG] Stmt 141: shift_left
-[DFG] Stmt 142: addi
-[DFG] Stmt 143: load
-[DFG] Stmt 144: mulf
-[DFG] Stmt 145: addf
-[DFG] Stmt 146: shift_left
-[DFG] Stmt 147: addi
-[DFG] Stmt 148: shift_left
-[DFG] Stmt 149: addi
-[DFG] Stmt 150: load
-[DFG] Stmt 151: mulf
-[DFG] Stmt 152: addf
-[DFG] Stmt 153: shift_left
+[DFG] Stmt 141: load
+[DFG] Stmt 142: subf
+[DFG] Stmt 143: shift_left
+[DFG] Stmt 144: addi
+[DFG] Stmt 145: muli
+[DFG] Stmt 146: load
+[DFG] Stmt 147: addf
+[DFG] Stmt 148: subf
+[DFG] Stmt 149: mulf
+[DFG] Stmt 150: subf
+[DFG] Stmt 151: muli
+[DFG] Stmt 152: store
+[DFG] Stmt 153: muli
 [DFG] Stmt 154: addi
-[DFG] Stmt 155: shift_left
-[DFG] Stmt 156: addi
-[DFG] Stmt 157: load
-[DFG] Stmt 158: mulf
-[DFG] Stmt 159: addf
-[DFG] Stmt 160: shift_left
-[DFG] Stmt 161: addi
+[DFG] Stmt 155: load
+[DFG] Stmt 156: shift_left
+[DFG] Stmt 157: addi
+[DFG] Stmt 158: muli
+[DFG] Stmt 159: addi
+[DFG] Stmt 160: load
+[DFG] Stmt 161: subf
 [DFG] Stmt 162: shift_left
 [DFG] Stmt 163: addi
-[DFG] Stmt 164: load
-[DFG] Stmt 165: mulf
-[DFG] Stmt 166: addf
-[DFG] Stmt 167: shift_left
-[DFG] Stmt 168: addi
-[DFG] Stmt 169: shift_left
-[DFG] Stmt 170: addi
-[DFG] Stmt 171: load
-[DFG] Stmt 172: mulf
-[DFG] Stmt 173: addf
-[DFG] Stmt 174: shift_left
+[DFG] Stmt 164: muli
+[DFG] Stmt 165: addi
+[DFG] Stmt 166: load
+[DFG] Stmt 167: addf
+[DFG] Stmt 168: subf
+[DFG] Stmt 169: mulf
+[DFG] Stmt 170: subf
+[DFG] Stmt 171: muli
+[DFG] Stmt 172: addi
+[DFG] Stmt 173: store
+[DFG] Stmt 174: muli
 [DFG] Stmt 175: addi
-[DFG] Stmt 176: shift_left
-[DFG] Stmt 177: addi
-[DFG] Stmt 178: load
-[DFG] Stmt 179: mulf
-[DFG] Stmt 180: addf
-[DFG] Stmt 181: shift_left
-[DFG] Stmt 182: addi
+[DFG] Stmt 176: load
+[DFG] Stmt 177: shift_left
+[DFG] Stmt 178: addi
+[DFG] Stmt 179: muli
+[DFG] Stmt 180: addi
+[DFG] Stmt 181: load
+[DFG] Stmt 182: subf
 [DFG] Stmt 183: shift_left
 [DFG] Stmt 184: addi
-[DFG] Stmt 185: load
-[DFG] Stmt 186: mulf
-[DFG] Stmt 187: addf
-[DFG] Stmt 188: shift_left
-[DFG] Stmt 189: addi
-[DFG] Stmt 190: shift_left
-[DFG] Stmt 191: addi
-[DFG] Stmt 192: load
-[DFG] Stmt 193: mulf
-[DFG] Stmt 194: addf
-[DFG] Stmt 195: shift_left
+[DFG] Stmt 185: muli
+[DFG] Stmt 186: addi
+[DFG] Stmt 187: load
+[DFG] Stmt 188: addf
+[DFG] Stmt 189: subf
+[DFG] Stmt 190: mulf
+[DFG] Stmt 191: subf
+[DFG] Stmt 192: muli
+[DFG] Stmt 193: addi
+[DFG] Stmt 194: store
+[DFG] Stmt 195: muli
 [DFG] Stmt 196: addi
-[DFG] Stmt 197: shift_left
-[DFG] Stmt 198: addi
-[DFG] Stmt 199: load
-[DFG] Stmt 200: mulf
-[DFG] Stmt 201: addf
-[DFG] Stmt 202: shift_left
-[DFG] Stmt 203: addi
+[DFG] Stmt 197: load
+[DFG] Stmt 198: shift_left
+[DFG] Stmt 199: addi
+[DFG] Stmt 200: muli
+[DFG] Stmt 201: addi
+[DFG] Stmt 202: load
+[DFG] Stmt 203: subf
 [DFG] Stmt 204: shift_left
 [DFG] Stmt 205: addi
-[DFG] Stmt 206: load
-[DFG] Stmt 207: mulf
-[DFG] Stmt 208: addf
-[DFG] Stmt 209: shift_left
-[DFG] Stmt 210: addi
-[DFG] Stmt 211: shift_left
-[DFG] Stmt 212: addi
-[DFG] Stmt 213: load
-[DFG] Stmt 214: mulf
-[DFG] Stmt 215: addf
-[DFG] Stmt 216: shift_left
-[DFG] Stmt 217: addi
-[DFG] Stmt 218: shift_left
-[DFG] Stmt 219: addi
-[DFG] Stmt 220: load
-[DFG] Stmt 221: mulf
-[DFG] Stmt 222: addf
-[DFG] Stmt 223: shift_left
-[DFG] Stmt 224: addi
-[DFG] Stmt 225: shift_left
-[DFG] Stmt 226: addi
-[DFG] Stmt 227: load
-[DFG] Stmt 228: mulf
-[DFG] Stmt 229: addf
-[DFG] Stmt 230: shift_left
-[DFG] Stmt 231: addi
-[DFG] Stmt 232: shift_left
-[DFG] Stmt 233: addi
-[DFG] Stmt 234: load
-[DFG] Stmt 235: mulf
-[DFG] Stmt 236: addf
-[DFG] Stmt 237: store
-[DFG] Stmt 238: load
-[DFG] Stmt 239: mulf
-[DFG] Stmt 240: addf
-[DFG] Stmt 241: store
-[DFG] Stmt 242: load
-[DFG] Stmt 243: mulf
-[DFG] Stmt 244: addf
-[DFG] Stmt 245: store
-[DFG] Stmt 246: load
-[DFG] Stmt 247: mulf
-[DFG] Stmt 248: addf
-[DFG] Stmt 249: store
-[DFG] Stmt 250: load
-[DFG] Stmt 251: mulf
-[DFG] Stmt 252: addf
-[DFG] Stmt 253: store
-[DFG] Stmt 254: load
-[DFG] Stmt 255: mulf
-[DFG] Stmt 256: addf
-[DFG] Stmt 257: store
-[DFG] Stmt 258: load
-[DFG] Stmt 259: mulf
-[DFG] Stmt 260: addf
-[DFG] Stmt 261: store
-[DFG] Stmt 262: load
-[DFG] Stmt 263: mulf
-[DFG] Stmt 264: addf
-[DFG] Stmt 265: store
-[DFG] Stmt 266: load
-[DFG] Stmt 267: mulf
-[DFG] Stmt 268: addf
-[DFG] Stmt 269: store
-[DFG] Stmt 270: load
-[DFG] Stmt 271: mulf
-[DFG] Stmt 272: addf
-[DFG] Stmt 273: store
-[DFG] Stmt 274: load
-[DFG] Stmt 275: mulf
-[DFG] Stmt 276: addf
-[DFG] Stmt 277: store
-[DFG] Stmt 278: load
-[DFG] Stmt 279: mulf
-[DFG] Stmt 280: addf
-[DFG] Stmt 281: store
-[DFG] Stmt 282: load
-[DFG] Stmt 283: mulf
-[DFG] Stmt 284: addf
-[DFG] Stmt 285: store
-[DFG] Stmt 286: load
-[DFG] Stmt 287: mulf
-[DFG] Stmt 288: addf
-[DFG] Stmt 289: store
-[DFG] Stmt 290: load
-[DFG] Stmt 291: mulf
-[DFG] Stmt 292: addf
-[DFG] Stmt 293: store
-[DFG] Stmt 294: load
-[DFG] Stmt 295: mulf
-[DFG] Stmt 296: addf
-[DFG] Stmt 297: store
-[DFG] Stmt 298: load
-[DFG] Stmt 299: mulf
-[DFG] Stmt 300: addf
-[DFG] Stmt 301: store
-[SDC] Stmt 0 uses: 1 6 11 17 23 29 35 41 47 53 59 65 71 77 83 89 128 134 140 147 154 161 168 175 182 189 196 203 210 217 224 231 
-[SDC] Stmt 1 uses: 2 7 12 18 24 30 36 42 48 54 60 66 72 78 84 90 
-[SDC] Stmt 2 uses: 3 95 
-[SDC] Stmt 3 uses: 4 
-[SDC] Stmt 4 uses: 9 
+[DFG] Stmt 206: muli
+[DFG] Stmt 207: addi
+[DFG] Stmt 208: load
+[DFG] Stmt 209: addf
+[DFG] Stmt 210: subf
+[DFG] Stmt 211: mulf
+[DFG] Stmt 212: subf
+[DFG] Stmt 213: muli
+[DFG] Stmt 214: addi
+[DFG] Stmt 215: store
+[SDC] Stmt 0 uses: 1 21 23 41 43 64 67 88 91 112 115 134 136 152 154 172 175 193 196 214 
+[SDC] Stmt 1 uses: 19 21 65 113 
+[SDC] Stmt 2 uses: 3 6 10 15 25 30 35 46 51 57 70 75 81 94 99 105 117 121 126 138 144 157 163 178 184 199 205 
+[SDC] Stmt 3 uses: 4 7 16 26 36 47 58 71 82 95 106 
+[SDC] Stmt 4 uses: 8 28 
 [SDC] Stmt 5 uses: 
 [SDC] Stmt 6 uses: 
-[SDC] Stmt 7 uses: 8 97 
-[SDC] Stmt 8 uses: 9 
-[SDC] Stmt 9 uses: 15 
-[SDC] Stmt 10 uses: 
-[SDC] Stmt 11 uses: 
-[SDC] Stmt 12 uses: 13 19 
-[SDC] Stmt 13 uses: 14 99 
-[SDC] Stmt 14 uses: 15 
-[SDC] Stmt 15 uses: 21 
-[SDC] Stmt 16 uses: 
-[SDC] Stmt 17 uses: 
-[SDC] Stmt 18 uses: 
-[SDC] Stmt 19 uses: 20 101 
-[SDC] Stmt 20 uses: 21 
-[SDC] Stmt 21 uses: 27 
+[SDC] Stmt 7 uses: 8 
+[SDC] Stmt 8 uses: 13 
+[SDC] Stmt 9 uses: 
+[SDC] Stmt 10 uses: 11 31 52 76 100 118 122 139 158 179 200 
+[SDC] Stmt 11 uses: 12 32 53 77 101 119 123 140 159 180 201 
+[SDC] Stmt 12 uses: 13 130 
+[SDC] Stmt 13 uses: 17 
+[SDC] Stmt 14 uses: 
+[SDC] Stmt 15 uses: 
+[SDC] Stmt 16 uses: 17 
+[SDC] Stmt 17 uses: 18 
+[SDC] Stmt 18 uses: 19 
+[SDC] Stmt 19 uses: 21 
+[SDC] Stmt 20 uses: 
+[SDC] Stmt 21 uses: 44 65 92 113 
 [SDC] Stmt 22 uses: 
-[SDC] Stmt 23 uses: 
-[SDC] Stmt 24 uses: 25 31 
-[SDC] Stmt 25 uses: 26 103 
-[SDC] Stmt 26 uses: 27 
-[SDC] Stmt 27 uses: 33 
-[SDC] Stmt 28 uses: 
+[SDC] Stmt 23 uses: 39 41 89 
+[SDC] Stmt 24 uses: 
+[SDC] Stmt 25 uses: 
+[SDC] Stmt 26 uses: 27 48 59 83 
+[SDC] Stmt 27 uses: 28 49 
+[SDC] Stmt 28 uses: 33 
 [SDC] Stmt 29 uses: 
 [SDC] Stmt 30 uses: 
-[SDC] Stmt 31 uses: 32 105 
-[SDC] Stmt 32 uses: 33 
-[SDC] Stmt 33 uses: 39 
+[SDC] Stmt 31 uses: 
+[SDC] Stmt 32 uses: 33 148 
+[SDC] Stmt 33 uses: 37 
 [SDC] Stmt 34 uses: 
 [SDC] Stmt 35 uses: 
-[SDC] Stmt 36 uses: 37 43 
-[SDC] Stmt 37 uses: 38 107 
+[SDC] Stmt 36 uses: 37 
+[SDC] Stmt 37 uses: 38 
 [SDC] Stmt 38 uses: 39 
-[SDC] Stmt 39 uses: 45 
+[SDC] Stmt 39 uses: 41 
 [SDC] Stmt 40 uses: 
-[SDC] Stmt 41 uses: 
+[SDC] Stmt 41 uses: 68 89 
 [SDC] Stmt 42 uses: 
-[SDC] Stmt 43 uses: 44 109 
-[SDC] Stmt 44 uses: 45 
-[SDC] Stmt 45 uses: 51 
+[SDC] Stmt 43 uses: 44 65 68 89 155 173 176 194 
+[SDC] Stmt 44 uses: 62 65 113 
+[SDC] Stmt 45 uses: 
 [SDC] Stmt 46 uses: 
 [SDC] Stmt 47 uses: 
-[SDC] Stmt 48 uses: 49 55 
-[SDC] Stmt 49 uses: 50 111 
-[SDC] Stmt 50 uses: 51 
-[SDC] Stmt 51 uses: 57 
+[SDC] Stmt 48 uses: 49 73 
+[SDC] Stmt 49 uses: 55 
+[SDC] Stmt 50 uses: 
+[SDC] Stmt 51 uses: 
 [SDC] Stmt 52 uses: 
-[SDC] Stmt 53 uses: 
-[SDC] Stmt 54 uses: 
-[SDC] Stmt 55 uses: 56 113 
-[SDC] Stmt 56 uses: 57 
-[SDC] Stmt 57 uses: 63 
+[SDC] Stmt 53 uses: 54 78 141 160 
+[SDC] Stmt 54 uses: 55 168 
+[SDC] Stmt 55 uses: 60 
+[SDC] Stmt 56 uses: 
+[SDC] Stmt 57 uses: 
 [SDC] Stmt 58 uses: 
-[SDC] Stmt 59 uses: 
-[SDC] Stmt 60 uses: 61 67 
-[SDC] Stmt 61 uses: 62 115 
-[SDC] Stmt 62 uses: 63 
-[SDC] Stmt 63 uses: 69 
+[SDC] Stmt 59 uses: 60 
+[SDC] Stmt 60 uses: 61 
+[SDC] Stmt 61 uses: 62 
+[SDC] Stmt 62 uses: 65 
+[SDC] Stmt 63 uses: 
 [SDC] Stmt 64 uses: 
-[SDC] Stmt 65 uses: 
+[SDC] Stmt 65 uses: 92 113 
 [SDC] Stmt 66 uses: 
-[SDC] Stmt 67 uses: 68 117 
-[SDC] Stmt 68 uses: 69 
-[SDC] Stmt 69 uses: 75 
+[SDC] Stmt 67 uses: 
+[SDC] Stmt 68 uses: 86 89 
+[SDC] Stmt 69 uses: 
 [SDC] Stmt 70 uses: 
-[SDC] Stmt 71 uses: 
-[SDC] Stmt 72 uses: 73 79 
-[SDC] Stmt 73 uses: 74 119 
-[SDC] Stmt 74 uses: 75 
-[SDC] Stmt 75 uses: 81 
+[SDC] Stmt 71 uses: 72 96 107 
+[SDC] Stmt 72 uses: 73 97 
+[SDC] Stmt 73 uses: 79 
+[SDC] Stmt 74 uses: 
+[SDC] Stmt 75 uses: 
 [SDC] Stmt 76 uses: 
 [SDC] Stmt 77 uses: 
-[SDC] Stmt 78 uses: 
-[SDC] Stmt 79 uses: 80 121 
-[SDC] Stmt 80 uses: 81 
-[SDC] Stmt 81 uses: 87 
+[SDC] Stmt 78 uses: 79 189 
+[SDC] Stmt 79 uses: 84 
+[SDC] Stmt 80 uses: 
+[SDC] Stmt 81 uses: 
 [SDC] Stmt 82 uses: 
-[SDC] Stmt 83 uses: 
-[SDC] Stmt 84 uses: 85 91 
-[SDC] Stmt 85 uses: 86 123 
-[SDC] Stmt 86 uses: 87 
-[SDC] Stmt 87 uses: 93 
+[SDC] Stmt 83 uses: 84 
+[SDC] Stmt 84 uses: 85 
+[SDC] Stmt 85 uses: 86 
+[SDC] Stmt 86 uses: 89 
+[SDC] Stmt 87 uses: 
 [SDC] Stmt 88 uses: 
 [SDC] Stmt 89 uses: 
 [SDC] Stmt 90 uses: 
-[SDC] Stmt 91 uses: 92 125 
-[SDC] Stmt 92 uses: 93 
-[SDC] Stmt 93 uses: 94 95 97 99 101 103 105 107 109 111 113 115 117 119 121 123 125 
+[SDC] Stmt 91 uses: 92 113 197 215 
+[SDC] Stmt 92 uses: 110 113 
+[SDC] Stmt 93 uses: 
 [SDC] Stmt 94 uses: 
-[SDC] Stmt 95 uses: 96 
-[SDC] Stmt 96 uses: 
-[SDC] Stmt 97 uses: 98 
+[SDC] Stmt 95 uses: 
+[SDC] Stmt 96 uses: 97 
+[SDC] Stmt 97 uses: 103 
 [SDC] Stmt 98 uses: 
-[SDC] Stmt 99 uses: 100 
+[SDC] Stmt 99 uses: 
 [SDC] Stmt 100 uses: 
-[SDC] Stmt 101 uses: 102 
-[SDC] Stmt 102 uses: 
-[SDC] Stmt 103 uses: 104 
+[SDC] Stmt 101 uses: 102 181 202 
+[SDC] Stmt 102 uses: 103 210 
+[SDC] Stmt 103 uses: 108 
 [SDC] Stmt 104 uses: 
-[SDC] Stmt 105 uses: 106 
+[SDC] Stmt 105 uses: 
 [SDC] Stmt 106 uses: 
 [SDC] Stmt 107 uses: 108 
-[SDC] Stmt 108 uses: 
+[SDC] Stmt 108 uses: 109 
 [SDC] Stmt 109 uses: 110 
-[SDC] Stmt 110 uses: 
-[SDC] Stmt 111 uses: 112 
+[SDC] Stmt 110 uses: 113 
+[SDC] Stmt 111 uses: 
 [SDC] Stmt 112 uses: 
-[SDC] Stmt 113 uses: 114 
+[SDC] Stmt 113 uses: 
 [SDC] Stmt 114 uses: 
-[SDC] Stmt 115 uses: 116 
+[SDC] Stmt 115 uses: 132 134 173 215 
 [SDC] Stmt 116 uses: 
-[SDC] Stmt 117 uses: 118 
+[SDC] Stmt 117 uses: 
 [SDC] Stmt 118 uses: 
-[SDC] Stmt 119 uses: 120 
+[SDC] Stmt 119 uses: 124 142 
 [SDC] Stmt 120 uses: 
-[SDC] Stmt 121 uses: 122 
+[SDC] Stmt 121 uses: 
 [SDC] Stmt 122 uses: 
 [SDC] Stmt 123 uses: 124 
-[SDC] Stmt 124 uses: 
-[SDC] Stmt 125 uses: 126 
-[SDC] Stmt 126 uses: 
-[SDC] Stmt 127 uses: 
-[SDC] Stmt 128 uses: 129 135 141 148 155 162 169 176 183 190 197 204 211 218 225 232 
-[SDC] Stmt 129 uses: 130 136 142 149 156 163 170 177 184 191 198 205 212 219 226 233 
-[SDC] Stmt 130 uses: 131 239 
+[SDC] Stmt 124 uses: 129 
+[SDC] Stmt 125 uses: 
+[SDC] Stmt 126 uses: 127 145 164 185 206 
+[SDC] Stmt 127 uses: 128 146 165 186 207 
+[SDC] Stmt 128 uses: 129 
+[SDC] Stmt 129 uses: 130 
+[SDC] Stmt 130 uses: 131 
 [SDC] Stmt 131 uses: 132 
-[SDC] Stmt 132 uses: 138 
+[SDC] Stmt 132 uses: 134 
 [SDC] Stmt 133 uses: 
-[SDC] Stmt 134 uses: 
+[SDC] Stmt 134 uses: 155 173 197 215 
 [SDC] Stmt 135 uses: 
-[SDC] Stmt 136 uses: 137 243 
-[SDC] Stmt 137 uses: 138 
-[SDC] Stmt 138 uses: 145 
+[SDC] Stmt 136 uses: 150 152 194 
+[SDC] Stmt 137 uses: 
+[SDC] Stmt 138 uses: 
 [SDC] Stmt 139 uses: 
 [SDC] Stmt 140 uses: 
-[SDC] Stmt 141 uses: 
-[SDC] Stmt 142 uses: 143 150 
-[SDC] Stmt 143 uses: 144 247 
-[SDC] Stmt 144 uses: 145 
-[SDC] Stmt 145 uses: 152 
-[SDC] Stmt 146 uses: 
-[SDC] Stmt 147 uses: 
-[SDC] Stmt 148 uses: 
-[SDC] Stmt 149 uses: 
-[SDC] Stmt 150 uses: 151 251 
-[SDC] Stmt 151 uses: 152 
-[SDC] Stmt 152 uses: 159 
+[SDC] Stmt 141 uses: 142 161 
+[SDC] Stmt 142 uses: 147 
+[SDC] Stmt 143 uses: 
+[SDC] Stmt 144 uses: 
+[SDC] Stmt 145 uses: 
+[SDC] Stmt 146 uses: 147 
+[SDC] Stmt 147 uses: 148 
+[SDC] Stmt 148 uses: 149 
+[SDC] Stmt 149 uses: 150 
+[SDC] Stmt 150 uses: 152 
+[SDC] Stmt 151 uses: 
+[SDC] Stmt 152 uses: 176 194 
 [SDC] Stmt 153 uses: 
 [SDC] Stmt 154 uses: 
-[SDC] Stmt 155 uses: 
-[SDC] Stmt 156 uses: 157 164 
-[SDC] Stmt 157 uses: 158 255 
-[SDC] Stmt 158 uses: 159 
-[SDC] Stmt 159 uses: 166 
-[SDC] Stmt 160 uses: 
-[SDC] Stmt 161 uses: 
+[SDC] Stmt 155 uses: 170 173 215 
+[SDC] Stmt 156 uses: 
+[SDC] Stmt 157 uses: 
+[SDC] Stmt 158 uses: 
+[SDC] Stmt 159 uses: 
+[SDC] Stmt 160 uses: 161 182 
+[SDC] Stmt 161 uses: 167 
 [SDC] Stmt 162 uses: 
 [SDC] Stmt 163 uses: 
-[SDC] Stmt 164 uses: 165 259 
-[SDC] Stmt 165 uses: 166 
-[SDC] Stmt 166 uses: 173 
-[SDC] Stmt 167 uses: 
-[SDC] Stmt 168 uses: 
-[SDC] Stmt 169 uses: 
-[SDC] Stmt 170 uses: 171 178 
-[SDC] Stmt 171 uses: 172 263 
-[SDC] Stmt 172 uses: 173 
-[SDC] Stmt 173 uses: 180 
+[SDC] Stmt 164 uses: 
+[SDC] Stmt 165 uses: 166 187 
+[SDC] Stmt 166 uses: 167 
+[SDC] Stmt 167 uses: 168 
+[SDC] Stmt 168 uses: 169 
+[SDC] Stmt 169 uses: 170 
+[SDC] Stmt 170 uses: 173 
+[SDC] Stmt 171 uses: 
+[SDC] Stmt 172 uses: 
+[SDC] Stmt 173 uses: 197 215 
 [SDC] Stmt 174 uses: 
 [SDC] Stmt 175 uses: 
-[SDC] Stmt 176 uses: 
+[SDC] Stmt 176 uses: 191 194 
 [SDC] Stmt 177 uses: 
-[SDC] Stmt 178 uses: 179 267 
-[SDC] Stmt 179 uses: 180 
-[SDC] Stmt 180 uses: 187 
-[SDC] Stmt 181 uses: 
-[SDC] Stmt 182 uses: 
+[SDC] Stmt 178 uses: 
+[SDC] Stmt 179 uses: 
+[SDC] Stmt 180 uses: 
+[SDC] Stmt 181 uses: 182 203 
+[SDC] Stmt 182 uses: 188 
 [SDC] Stmt 183 uses: 
-[SDC] Stmt 184 uses: 185 192 
-[SDC] Stmt 185 uses: 186 271 
-[SDC] Stmt 186 uses: 187 
-[SDC] Stmt 187 uses: 194 
-[SDC] Stmt 188 uses: 
-[SDC] Stmt 189 uses: 
-[SDC] Stmt 190 uses: 
-[SDC] Stmt 191 uses: 
-[SDC] Stmt 192 uses: 193 275 
-[SDC] Stmt 193 uses: 194 
-[SDC] Stmt 194 uses: 201 
+[SDC] Stmt 184 uses: 
+[SDC] Stmt 185 uses: 
+[SDC] Stmt 186 uses: 
+[SDC] Stmt 187 uses: 188 
+[SDC] Stmt 188 uses: 189 
+[SDC] Stmt 189 uses: 190 
+[SDC] Stmt 190 uses: 191 
+[SDC] Stmt 191 uses: 194 
+[SDC] Stmt 192 uses: 
+[SDC] Stmt 193 uses: 
+[SDC] Stmt 194 uses: 
 [SDC] Stmt 195 uses: 
 [SDC] Stmt 196 uses: 
-[SDC] Stmt 197 uses: 
-[SDC] Stmt 198 uses: 199 206 
-[SDC] Stmt 199 uses: 200 279 
-[SDC] Stmt 200 uses: 201 
-[SDC] Stmt 201 uses: 208 
-[SDC] Stmt 202 uses: 
-[SDC] Stmt 203 uses: 
+[SDC] Stmt 197 uses: 212 215 
+[SDC] Stmt 198 uses: 
+[SDC] Stmt 199 uses: 
+[SDC] Stmt 200 uses: 
+[SDC] Stmt 201 uses: 
+[SDC] Stmt 202 uses: 203 
+[SDC] Stmt 203 uses: 209 
 [SDC] Stmt 204 uses: 
 [SDC] Stmt 205 uses: 
-[SDC] Stmt 206 uses: 207 283 
+[SDC] Stmt 206 uses: 
 [SDC] Stmt 207 uses: 208 
-[SDC] Stmt 208 uses: 215 
-[SDC] Stmt 209 uses: 
-[SDC] Stmt 210 uses: 
-[SDC] Stmt 211 uses: 
-[SDC] Stmt 212 uses: 213 220 
-[SDC] Stmt 213 uses: 214 287 
-[SDC] Stmt 214 uses: 215 
-[SDC] Stmt 215 uses: 222 
-[SDC] Stmt 216 uses: 
-[SDC] Stmt 217 uses: 
-[SDC] Stmt 218 uses: 
-[SDC] Stmt 219 uses: 
-[SDC] Stmt 220 uses: 221 291 
-[SDC] Stmt 221 uses: 222 
-[SDC] Stmt 222 uses: 229 
-[SDC] Stmt 223 uses: 
-[SDC] Stmt 224 uses: 
-[SDC] Stmt 225 uses: 
-[SDC] Stmt 226 uses: 227 234 
-[SDC] Stmt 227 uses: 228 295 
-[SDC] Stmt 228 uses: 229 
-[SDC] Stmt 229 uses: 236 
-[SDC] Stmt 230 uses: 
-[SDC] Stmt 231 uses: 
-[SDC] Stmt 232 uses: 
-[SDC] Stmt 233 uses: 
-[SDC] Stmt 234 uses: 235 299 
-[SDC] Stmt 235 uses: 236 
-[SDC] Stmt 236 uses: 237 239 243 247 251 255 259 263 267 271 275 279 283 287 291 295 299 
-[SDC] Stmt 237 uses: 
-[SDC] Stmt 238 uses: 240 241 249 257 265 273 281 289 297 
-[SDC] Stmt 239 uses: 240 
-[SDC] Stmt 240 uses: 241 
-[SDC] Stmt 241 uses: 246 249 254 257 262 265 270 273 278 281 286 289 294 297 
-[SDC] Stmt 242 uses: 244 245 253 261 269 277 285 293 301 
-[SDC] Stmt 243 uses: 244 
-[SDC] Stmt 244 uses: 245 
-[SDC] Stmt 245 uses: 250 253 258 261 266 269 274 277 282 285 290 293 298 301 
-[SDC] Stmt 246 uses: 248 249 257 265 273 281 289 297 
-[SDC] Stmt 247 uses: 248 
-[SDC] Stmt 248 uses: 249 
-[SDC] Stmt 249 uses: 254 257 262 265 270 273 278 281 286 289 294 297 
-[SDC] Stmt 250 uses: 252 253 261 269 277 285 293 301 
-[SDC] Stmt 251 uses: 252 
-[SDC] Stmt 252 uses: 253 
-[SDC] Stmt 253 uses: 258 261 266 269 274 277 282 285 290 293 298 301 
-[SDC] Stmt 254 uses: 256 257 265 273 281 289 297 
-[SDC] Stmt 255 uses: 256 
-[SDC] Stmt 256 uses: 257 
-[SDC] Stmt 257 uses: 262 265 270 273 278 281 286 289 294 297 
-[SDC] Stmt 258 uses: 260 261 269 277 285 293 301 
-[SDC] Stmt 259 uses: 260 
-[SDC] Stmt 260 uses: 261 
-[SDC] Stmt 261 uses: 266 269 274 277 282 285 290 293 298 301 
-[SDC] Stmt 262 uses: 264 265 273 281 289 297 
-[SDC] Stmt 263 uses: 264 
-[SDC] Stmt 264 uses: 265 
-[SDC] Stmt 265 uses: 270 273 278 281 286 289 294 297 
-[SDC] Stmt 266 uses: 268 269 277 285 293 301 
-[SDC] Stmt 267 uses: 268 
-[SDC] Stmt 268 uses: 269 
-[SDC] Stmt 269 uses: 274 277 282 285 290 293 298 301 
-[SDC] Stmt 270 uses: 272 273 281 289 297 
-[SDC] Stmt 271 uses: 272 
-[SDC] Stmt 272 uses: 273 
-[SDC] Stmt 273 uses: 278 281 286 289 294 297 
-[SDC] Stmt 274 uses: 276 277 285 293 301 
-[SDC] Stmt 275 uses: 276 
-[SDC] Stmt 276 uses: 277 
-[SDC] Stmt 277 uses: 282 285 290 293 298 301 
-[SDC] Stmt 278 uses: 280 281 289 297 
-[SDC] Stmt 279 uses: 280 
-[SDC] Stmt 280 uses: 281 
-[SDC] Stmt 281 uses: 286 289 294 297 
-[SDC] Stmt 282 uses: 284 285 293 301 
-[SDC] Stmt 283 uses: 284 
-[SDC] Stmt 284 uses: 285 
-[SDC] Stmt 285 uses: 290 293 298 301 
-[SDC] Stmt 286 uses: 288 289 297 
-[SDC] Stmt 287 uses: 288 
-[SDC] Stmt 288 uses: 289 
-[SDC] Stmt 289 uses: 294 297 
-[SDC] Stmt 290 uses: 292 293 301 
-[SDC] Stmt 291 uses: 292 
-[SDC] Stmt 292 uses: 293 
-[SDC] Stmt 293 uses: 298 301 
-[SDC] Stmt 294 uses: 296 297 
-[SDC] Stmt 295 uses: 296 
-[SDC] Stmt 296 uses: 297 
-[SDC] Stmt 297 uses: 
-[SDC] Stmt 298 uses: 300 301 
-[SDC] Stmt 299 uses: 300 
-[SDC] Stmt 300 uses: 301 
-[SDC] Stmt 301 uses: 
-dist0=-168
-dist1=-106
-dist2=-105
-dist3=-104
-dist4=-100
+[SDC] Stmt 208 uses: 209 
+[SDC] Stmt 209 uses: 210 
+[SDC] Stmt 210 uses: 211 
+[SDC] Stmt 211 uses: 212 
+[SDC] Stmt 212 uses: 215 
+[SDC] Stmt 213 uses: 
+[SDC] Stmt 214 uses: 
+[SDC] Stmt 215 uses: 
+
+
+
+
+
+
+
+
+
+
+dist0=-24
+dist1=-23
+dist2=-46
+dist3=-46
+dist4=-45
 dist5=0
 dist6=0
-dist7=-99
-dist8=-98
-dist9=-94
-dist10=0
-dist11=0
-dist12=-94
-dist13=-93
-dist14=-92
-dist15=-88
-dist16=0
-dist17=0
-dist18=0
-dist19=-87
-dist20=-86
-dist21=-82
+dist7=-45
+dist8=-44
+dist9=0
+dist10=-46
+dist11=-46
+dist12=-39
+dist13=-38
+dist14=0
+dist15=0
+dist16=-33
+dist17=-32
+dist18=-26
+dist19=-22
+dist20=0
+dist21=-16
 dist22=0
-dist23=0
-dist24=-82
-dist25=-81
-dist26=-80
-dist27=-76
-dist28=0
+dist23=-15
+dist24=0
+dist25=0
+dist26=-38
+dist27=-37
+dist28=-36
 dist29=0
 dist30=0
-dist31=-75
-dist32=-74
-dist33=-70
+dist31=0
+dist32=-31
+dist33=-30
 dist34=0
 dist35=0
-dist36=-70
-dist37=-69
-dist38=-68
-dist39=-64
+dist36=-25
+dist37=-24
+dist38=-18
+dist39=-14
 dist40=0
-dist41=0
+dist41=-8
 dist42=0
-dist43=-63
-dist44=-62
-dist45=-58
+dist43=-16
+dist44=-15
+dist45=0
 dist46=0
 dist47=0
-dist48=-58
-dist49=-57
-dist50=-56
-dist51=-52
+dist48=-37
+dist49=-36
+dist50=0
+dist51=0
 dist52=0
-dist53=0
-dist54=0
-dist55=-51
-dist56=-50
-dist57=-46
+dist53=-38
+dist54=-31
+dist55=-30
+dist56=0
+dist57=0
 dist58=0
-dist59=0
-dist60=-46
-dist61=-45
-dist62=-44
-dist63=-40
+dist59=-25
+dist60=-24
+dist61=-18
+dist62=-14
+dist63=0
 dist64=0
-dist65=0
+dist65=-8
 dist66=0
-dist67=-39
-dist68=-38
-dist69=-34
+dist67=0
+dist68=-7
+dist69=0
 dist70=0
-dist71=0
-dist72=-34
-dist73=-33
-dist74=-32
-dist75=-28
+dist71=-37
+dist72=-36
+dist73=-35
+dist74=0
+dist75=0
 dist76=0
 dist77=0
-dist78=0
-dist79=-27
-dist80=-26
-dist81=-22
+dist78=-30
+dist79=-29
+dist80=0
+dist81=0
 dist82=0
-dist83=0
-dist84=-22
-dist85=-21
-dist86=-20
-dist87=-16
+dist83=-24
+dist84=-23
+dist85=-10
+dist86=-6
+dist87=0
 dist88=0
 dist89=0
 dist90=0
-dist91=-15
-dist92=-14
-dist93=-10
+dist91=-8
+dist92=-7
+dist93=0
 dist94=0
-dist95=-4
-dist96=0
-dist97=-4
+dist95=0
+dist96=-29
+dist97=-28
 dist98=0
-dist99=-4
+dist99=0
 dist100=0
-dist101=-4
-dist102=0
-dist103=-4
+dist101=-30
+dist102=-23
+dist103=-22
 dist104=0
-dist105=-4
+dist105=0
 dist106=0
-dist107=-4
-dist108=0
-dist109=-4
-dist110=0
-dist111=-4
+dist107=-17
+dist108=-16
+dist109=-10
+dist110=-6
+dist111=0
 dist112=0
-dist113=-4
-dist114=0
-dist115=-4
+dist113=0
+dist114=-22
+dist115=-23
 dist116=0
-dist117=-4
+dist117=0
 dist118=0
-dist119=-4
+dist119=-45
 dist120=0
-dist121=-4
+dist121=0
 dist122=0
-dist123=-4
-dist124=0
-dist125=-4
-dist126=0
-dist127=0
-dist128=-168
-dist129=-168
-dist130=-167
-dist131=-166
-dist132=-162
+dist123=-45
+dist124=-44
+dist125=0
+dist126=-45
+dist127=-45
+dist128=-44
+dist129=-38
+dist130=-32
+dist131=-26
+dist132=-22
 dist133=0
-dist134=0
+dist134=-16
 dist135=0
-dist136=-161
-dist137=-160
-dist138=-156
+dist136=-15
+dist137=0
+dist138=0
 dist139=0
 dist140=0
-dist141=0
-dist142=-156
-dist143=-155
-dist144=-154
-dist145=-150
-dist146=0
-dist147=0
-dist148=0
-dist149=0
-dist150=-149
-dist151=-148
-dist152=-144
+dist141=-37
+dist142=-36
+dist143=0
+dist144=0
+dist145=-4
+dist146=-31
+dist147=-30
+dist148=-24
+dist149=-18
+dist150=-14
+dist151=0
+dist152=-8
 dist153=0
 dist154=0
-dist155=0
-dist156=-144
-dist157=-143
-dist158=-142
-dist159=-138
-dist160=0
-dist161=0
+dist155=-15
+dist156=0
+dist157=0
+dist158=0
+dist159=0
+dist160=-37
+dist161=-36
 dist162=0
 dist163=0
-dist164=-137
-dist165=-136
-dist166=-132
-dist167=0
-dist168=0
-dist169=0
-dist170=-132
-dist171=-131
-dist172=-130
-dist173=-126
+dist164=0
+dist165=-32
+dist166=-31
+dist167=-30
+dist168=-24
+dist169=-18
+dist170=-14
+dist171=0
+dist172=0
+dist173=-8
 dist174=0
 dist175=0
-dist176=0
+dist176=-7
 dist177=0
-dist178=-125
-dist179=-124
-dist180=-120
-dist181=0
-dist182=0
+dist178=0
+dist179=0
+dist180=0
+dist181=-29
+dist182=-28
 dist183=0
-dist184=-120
-dist185=-119
-dist186=-118
-dist187=-114
-dist188=0
-dist189=0
-dist190=0
-dist191=0
-dist192=-113
-dist193=-112
-dist194=-108
-dist195=0
+dist184=0
+dist185=0
+dist186=0
+dist187=-23
+dist188=-22
+dist189=-16
+dist190=-10
+dist191=-6
+dist192=0
+dist193=0
+dist194=0
+dist195=-47
 dist196=0
-dist197=0
-dist198=-108
-dist199=-107
-dist200=-106
-dist201=-102
-dist202=0
-dist203=0
+dist197=-7
+dist198=0
+dist199=0
+dist200=0
+dist201=0
+dist202=-29
+dist203=-28
 dist204=0
 dist205=0
-dist206=-101
-dist207=-100
-dist208=-96
-dist209=0
-dist210=0
-dist211=0
-dist212=-96
-dist213=-95
-dist214=-94
-dist215=-90
-dist216=0
-dist217=0
-dist218=0
-dist219=0
-dist220=-89
-dist221=-88
-dist222=-84
-dist223=0
-dist224=0
-dist225=0
-dist226=-84
-dist227=-83
-dist228=-82
-dist229=-78
-dist230=0
-dist231=0
-dist232=0
-dist233=0
-dist234=-77
-dist235=-76
-dist236=-72
-dist237=0
-dist238=-63
-dist239=-66
-dist240=-62
-dist241=-56
-dist242=-63
-dist243=-66
-dist244=-62
-dist245=-56
-dist246=-55
-dist247=-58
-dist248=-54
-dist249=-48
-dist250=-55
-dist251=-58
-dist252=-54
-dist253=-48
-dist254=-47
-dist255=-50
-dist256=-46
-dist257=-40
-dist258=-47
-dist259=-50
-dist260=-46
-dist261=-40
-dist262=-39
-dist263=-42
-dist264=-38
-dist265=-32
-dist266=-39
-dist267=-42
-dist268=-38
-dist269=-32
-dist270=-31
-dist271=-34
-dist272=-30
-dist273=-24
-dist274=-31
-dist275=-34
-dist276=-30
-dist277=-24
-dist278=-23
-dist279=-26
-dist280=-22
-dist281=-16
-dist282=-23
-dist283=-26
-dist284=-22
-dist285=-16
-dist286=-15
-dist287=-18
-dist288=-14
-dist289=-8
-dist290=-15
-dist291=-18
-dist292=-14
-dist293=-8
-dist294=-7
-dist295=-10
-dist296=-6
-dist297=0
-dist298=-7
-dist299=-10
-dist300=-6
-dist301=0
-[SDC] set_start_bound(169) failed (negative cycle). prune this mid.
+dist206=0
+dist207=-24
+dist208=-23
+dist209=-22
+dist210=-16
+dist211=-10
+dist212=-6
+dist213=0
+dist214=0
+dist215=0
+[SDC] set_start_bound(86) succeeded. inner_bound=85, super_offset=-47
+[SDC] post-bound max dist (internal x_i) = 47 (should be <= 85)
+[SAT] encode resource type 1 : size=10 limit=2
+[SAT] prune pair (i=21, j=65) by LB/UB/DUR: UB[i]+1=33 <= LB[j]=39 OR UB[j]+1=41 <= LB[i]=31
+[SAT] prune pair (i=21, j=89) by LB/UB/DUR: UB[i]+1=33 <= LB[j]=40 OR UB[j]+1=49 <= LB[i]=31
+[SAT] prune pair (i=21, j=113) by LB/UB/DUR: UB[i]+1=33 <= LB[j]=47 OR UB[j]+1=49 <= LB[i]=31
+[SAT] prune pair (i=21, j=152) by LB/UB/DUR: UB[i]+1=33 <= LB[j]=33 OR UB[j]+1=41 <= LB[i]=31
+[SAT] prune pair (i=21, j=173) by LB/UB/DUR: UB[i]+1=33 <= LB[j]=40 OR UB[j]+1=41 <= LB[i]=31
+[SAT] prune pair (i=21, j=194) by LB/UB/DUR: UB[i]+1=33 <= LB[j]=41 OR UB[j]+1=49 <= LB[i]=31
+[SAT] prune pair (i=21, j=215) by LB/UB/DUR: UB[i]+1=33 <= LB[j]=48 OR UB[j]+1=49 <= LB[i]=31
+[SAT] prune pair (i=41, j=113) by LB/UB/DUR: UB[i]+1=41 <= LB[j]=47 OR UB[j]+1=49 <= LB[i]=32
+[SAT] prune pair (i=41, j=194) by LB/UB/DUR: UB[i]+1=41 <= LB[j]=41 OR UB[j]+1=49 <= LB[i]=32
+[SAT] prune pair (i=41, j=215) by LB/UB/DUR: UB[i]+1=41 <= LB[j]=48 OR UB[j]+1=49 <= LB[i]=32
+[SAT] prune pair (i=65, j=113) by LB/UB/DUR: UB[i]+1=41 <= LB[j]=47 OR UB[j]+1=49 <= LB[i]=39
+[SAT] prune pair (i=65, j=134) by LB/UB/DUR: UB[i]+1=41 <= LB[j]=32 OR UB[j]+1=33 <= LB[i]=39
+[SAT] prune pair (i=65, j=194) by LB/UB/DUR: UB[i]+1=41 <= LB[j]=41 OR UB[j]+1=49 <= LB[i]=39
+[SAT] prune pair (i=65, j=215) by LB/UB/DUR: UB[i]+1=41 <= LB[j]=48 OR UB[j]+1=49 <= LB[i]=39
+[SAT] prune pair (i=89, j=134) by LB/UB/DUR: UB[i]+1=49 <= LB[j]=32 OR UB[j]+1=33 <= LB[i]=40
+[SAT] prune pair (i=113, j=134) by LB/UB/DUR: UB[i]+1=49 <= LB[j]=32 OR UB[j]+1=33 <= LB[i]=47
+[SAT] prune pair (i=113, j=152) by LB/UB/DUR: UB[i]+1=49 <= LB[j]=33 OR UB[j]+1=41 <= LB[i]=47
+[SAT] prune pair (i=113, j=173) by LB/UB/DUR: UB[i]+1=49 <= LB[j]=40 OR UB[j]+1=41 <= LB[i]=47
+[SAT] prune pair (i=134, j=152) by LB/UB/DUR: UB[i]+1=33 <= LB[j]=33 OR UB[j]+1=41 <= LB[i]=32
+[SAT] prune pair (i=134, j=173) by LB/UB/DUR: UB[i]+1=33 <= LB[j]=40 OR UB[j]+1=41 <= LB[i]=32
+[SAT] prune pair (i=134, j=194) by LB/UB/DUR: UB[i]+1=33 <= LB[j]=41 OR UB[j]+1=49 <= LB[i]=32
+[SAT] prune pair (i=134, j=215) by LB/UB/DUR: UB[i]+1=33 <= LB[j]=48 OR UB[j]+1=49 <= LB[i]=32
+[SAT] prune pair (i=152, j=194) by LB/UB/DUR: UB[i]+1=41 <= LB[j]=41 OR UB[j]+1=49 <= LB[i]=33
+[SAT] prune pair (i=152, j=215) by LB/UB/DUR: UB[i]+1=41 <= LB[j]=48 OR UB[j]+1=49 <= LB[i]=33
+[SAT] prune pair (i=173, j=194) by LB/UB/DUR: UB[i]+1=41 <= LB[j]=41 OR UB[j]+1=49 <= LB[i]=40
+[SAT] prune pair (i=173, j=215) by LB/UB/DUR: UB[i]+1=41 <= LB[j]=48 OR UB[j]+1=49 <= LB[i]=40
+[SAT] encode resource type 15 : size=10 limit=2
+[SAT] encode resource type 17 : size=30 limit=6
+[SAT] prune pair (i=8, j=17) by LB/UB/DUR: UB[i]+6=10 <= LB[j]=15 OR UB[j]+6=22 <= LB[i]=3
+[SAT] prune pair (i=8, j=19) by LB/UB/DUR: UB[i]+6=10 <= LB[j]=25 OR UB[j]+6=32 <= LB[i]=3
+[SAT] prune pair (i=8, j=37) by LB/UB/DUR: UB[i]+6=10 <= LB[j]=16 OR UB[j]+6=30 <= LB[i]=3
+[SAT] prune pair (i=8, j=39) by LB/UB/DUR: UB[i]+6=10 <= LB[j]=26 OR UB[j]+6=40 <= LB[i]=3
+[SAT] prune pair (i=8, j=60) by LB/UB/DUR: UB[i]+6=10 <= LB[j]=16 OR UB[j]+6=30 <= LB[i]=3
+[SAT] prune pair (i=8, j=62) by LB/UB/DUR: UB[i]+6=10 <= LB[j]=33 OR UB[j]+6=40 <= LB[i]=3
+[SAT] prune pair (i=8, j=84) by LB/UB/DUR: UB[i]+6=10 <= LB[j]=16 OR UB[j]+6=38 <= LB[i]=3
+[SAT] prune pair (i=8, j=86) by LB/UB/DUR: UB[i]+6=10 <= LB[j]=34 OR UB[j]+6=48 <= LB[i]=3
+[SAT] prune pair (i=8, j=108) by LB/UB/DUR: UB[i]+6=10 <= LB[j]=16 OR UB[j]+6=38 <= LB[i]=3
+[SAT] prune pair (i=8, j=110) by LB/UB/DUR: UB[i]+6=10 <= LB[j]=41 OR UB[j]+6=48 <= LB[i]=3
+[SAT] prune pair (i=8, j=130) by LB/UB/DUR: UB[i]+6=10 <= LB[j]=16 OR UB[j]+6=22 <= LB[i]=3
+[SAT] prune pair (i=8, j=132) by LB/UB/DUR: UB[i]+6=10 <= LB[j]=26 OR UB[j]+6=32 <= LB[i]=3
+[SAT] prune pair (i=8, j=148) by LB/UB/DUR: UB[i]+6=10 <= LB[j]=17 OR UB[j]+6=30 <= LB[i]=3
+[SAT] prune pair (i=8, j=150) by LB/UB/DUR: UB[i]+6=10 <= LB[j]=27 OR UB[j]+6=40 <= LB[i]=3
+[SAT] prune pair (i=8, j=168) by LB/UB/DUR: UB[i]+6=10 <= LB[j]=17 OR UB[j]+6=30 <= LB[i]=3
+[SAT] prune pair (i=8, j=170) by LB/UB/DUR: UB[i]+6=10 <= LB[j]=34 OR UB[j]+6=40 <= LB[i]=3
+[SAT] prune pair (i=8, j=189) by LB/UB/DUR: UB[i]+6=10 <= LB[j]=17 OR UB[j]+6=38 <= LB[i]=3
+[SAT] prune pair (i=8, j=191) by LB/UB/DUR: UB[i]+6=10 <= LB[j]=35 OR UB[j]+6=48 <= LB[i]=3
+[SAT] prune pair (i=8, j=210) by LB/UB/DUR: UB[i]+6=10 <= LB[j]=17 OR UB[j]+6=38 <= LB[i]=3
+[SAT] prune pair (i=8, j=212) by LB/UB/DUR: UB[i]+6=10 <= LB[j]=42 OR UB[j]+6=48 <= LB[i]=3
+[SAT] prune pair (i=17, j=19) by LB/UB/DUR: UB[i]+6=22 <= LB[j]=25 OR UB[j]+6=32 <= LB[i]=15
+[SAT] prune pair (i=17, j=39) by LB/UB/DUR: UB[i]+6=22 <= LB[j]=26 OR UB[j]+6=40 <= LB[i]=15
+[SAT] prune pair (i=17, j=62) by LB/UB/DUR: UB[i]+6=22 <= LB[j]=33 OR UB[j]+6=40 <= LB[i]=15
+[SAT] prune pair (i=17, j=86) by LB/UB/DUR: UB[i]+6=22 <= LB[j]=34 OR UB[j]+6=48 <= LB[i]=15
+[SAT] prune pair (i=17, j=110) by LB/UB/DUR: UB[i]+6=22 <= LB[j]=41 OR UB[j]+6=48 <= LB[i]=15
+[SAT] prune pair (i=17, j=124) by LB/UB/DUR: UB[i]+6=22 <= LB[j]=4 OR UB[j]+6=10 <= LB[i]=15
+[SAT] prune pair (i=17, j=132) by LB/UB/DUR: UB[i]+6=22 <= LB[j]=26 OR UB[j]+6=32 <= LB[i]=15
+[SAT] prune pair (i=17, j=150) by LB/UB/DUR: UB[i]+6=22 <= LB[j]=27 OR UB[j]+6=40 <= LB[i]=15
+[SAT] prune pair (i=17, j=170) by LB/UB/DUR: UB[i]+6=22 <= LB[j]=34 OR UB[j]+6=40 <= LB[i]=15
+[SAT] prune pair (i=17, j=191) by LB/UB/DUR: UB[i]+6=22 <= LB[j]=35 OR UB[j]+6=48 <= LB[i]=15
+[SAT] prune pair (i=17, j=212) by LB/UB/DUR: UB[i]+6=22 <= LB[j]=42 OR UB[j]+6=48 <= LB[i]=15
+[SAT] prune pair (i=19, j=28) by LB/UB/DUR: UB[i]+6=32 <= LB[j]=4 OR UB[j]+6=18 <= LB[i]=25
+[SAT] prune pair (i=19, j=49) by LB/UB/DUR: UB[i]+6=32 <= LB[j]=4 OR UB[j]+6=18 <= LB[i]=25
+[SAT] prune pair (i=19, j=62) by LB/UB/DUR: UB[i]+6=32 <= LB[j]=33 OR UB[j]+6=40 <= LB[i]=25
+[SAT] prune pair (i=19, j=86) by LB/UB/DUR: UB[i]+6=32 <= LB[j]=34 OR UB[j]+6=48 <= LB[i]=25
+[SAT] prune pair (i=19, j=110) by LB/UB/DUR: UB[i]+6=32 <= LB[j]=41 OR UB[j]+6=48 <= LB[i]=25
+[SAT] prune pair (i=19, j=124) by LB/UB/DUR: UB[i]+6=32 <= LB[j]=4 OR UB[j]+6=10 <= LB[i]=25
+[SAT] prune pair (i=19, j=130) by LB/UB/DUR: UB[i]+6=32 <= LB[j]=16 OR UB[j]+6=22 <= LB[i]=25
+[SAT] prune pair (i=19, j=142) by LB/UB/DUR: UB[i]+6=32 <= LB[j]=5 OR UB[j]+6=18 <= LB[i]=25
+[SAT] prune pair (i=19, j=161) by LB/UB/DUR: UB[i]+6=32 <= LB[j]=5 OR UB[j]+6=18 <= LB[i]=25
+[SAT] prune pair (i=19, j=170) by LB/UB/DUR: UB[i]+6=32 <= LB[j]=34 OR UB[j]+6=40 <= LB[i]=25
+[SAT] prune pair (i=19, j=191) by LB/UB/DUR: UB[i]+6=32 <= LB[j]=35 OR UB[j]+6=48 <= LB[i]=25
+[SAT] prune pair (i=19, j=212) by LB/UB/DUR: UB[i]+6=32 <= LB[j]=42 OR UB[j]+6=48 <= LB[i]=25
+[SAT] prune pair (i=28, j=39) by LB/UB/DUR: UB[i]+6=18 <= LB[j]=26 OR UB[j]+6=40 <= LB[i]=4
+[SAT] prune pair (i=28, j=62) by LB/UB/DUR: UB[i]+6=18 <= LB[j]=33 OR UB[j]+6=40 <= LB[i]=4
+[SAT] prune pair (i=28, j=86) by LB/UB/DUR: UB[i]+6=18 <= LB[j]=34 OR UB[j]+6=48 <= LB[i]=4
+[SAT] prune pair (i=28, j=110) by LB/UB/DUR: UB[i]+6=18 <= LB[j]=41 OR UB[j]+6=48 <= LB[i]=4
+[SAT] prune pair (i=28, j=132) by LB/UB/DUR: UB[i]+6=18 <= LB[j]=26 OR UB[j]+6=32 <= LB[i]=4
+[SAT] prune pair (i=28, j=150) by LB/UB/DUR: UB[i]+6=18 <= LB[j]=27 OR UB[j]+6=40 <= LB[i]=4
+[SAT] prune pair (i=28, j=170) by LB/UB/DUR: UB[i]+6=18 <= LB[j]=34 OR UB[j]+6=40 <= LB[i]=4
+[SAT] prune pair (i=28, j=191) by LB/UB/DUR: UB[i]+6=18 <= LB[j]=35 OR UB[j]+6=48 <= LB[i]=4
+[SAT] prune pair (i=28, j=212) by LB/UB/DUR: UB[i]+6=18 <= LB[j]=42 OR UB[j]+6=48 <= LB[i]=4
+[SAT] prune pair (i=37, j=62) by LB/UB/DUR: UB[i]+6=30 <= LB[j]=33 OR UB[j]+6=40 <= LB[i]=16
+[SAT] prune pair (i=37, j=86) by LB/UB/DUR: UB[i]+6=30 <= LB[j]=34 OR UB[j]+6=48 <= LB[i]=16
+[SAT] prune pair (i=37, j=110) by LB/UB/DUR: UB[i]+6=30 <= LB[j]=41 OR UB[j]+6=48 <= LB[i]=16
+[SAT] prune pair (i=37, j=124) by LB/UB/DUR: UB[i]+6=30 <= LB[j]=4 OR UB[j]+6=10 <= LB[i]=16
+[SAT] prune pair (i=37, j=170) by LB/UB/DUR: UB[i]+6=30 <= LB[j]=34 OR UB[j]+6=40 <= LB[i]=16
+[SAT] prune pair (i=37, j=191) by LB/UB/DUR: UB[i]+6=30 <= LB[j]=35 OR UB[j]+6=48 <= LB[i]=16
+[SAT] prune pair (i=37, j=212) by LB/UB/DUR: UB[i]+6=30 <= LB[j]=42 OR UB[j]+6=48 <= LB[i]=16
+[SAT] prune pair (i=39, j=49) by LB/UB/DUR: UB[i]+6=40 <= LB[j]=4 OR UB[j]+6=18 <= LB[i]=26
+[SAT] prune pair (i=39, j=73) by LB/UB/DUR: UB[i]+6=40 <= LB[j]=4 OR UB[j]+6=26 <= LB[i]=26
+[SAT] prune pair (i=39, j=97) by LB/UB/DUR: UB[i]+6=40 <= LB[j]=4 OR UB[j]+6=26 <= LB[i]=26
+[SAT] prune pair (i=39, j=110) by LB/UB/DUR: UB[i]+6=40 <= LB[j]=41 OR UB[j]+6=48 <= LB[i]=26
+[SAT] prune pair (i=39, j=124) by LB/UB/DUR: UB[i]+6=40 <= LB[j]=4 OR UB[j]+6=10 <= LB[i]=26
+[SAT] prune pair (i=39, j=130) by LB/UB/DUR: UB[i]+6=40 <= LB[j]=16 OR UB[j]+6=22 <= LB[i]=26
+[SAT] prune pair (i=39, j=142) by LB/UB/DUR: UB[i]+6=40 <= LB[j]=5 OR UB[j]+6=18 <= LB[i]=26
+[SAT] prune pair (i=39, j=161) by LB/UB/DUR: UB[i]+6=40 <= LB[j]=5 OR UB[j]+6=18 <= LB[i]=26
+[SAT] prune pair (i=39, j=182) by LB/UB/DUR: UB[i]+6=40 <= LB[j]=5 OR UB[j]+6=26 <= LB[i]=26
+[SAT] prune pair (i=39, j=203) by LB/UB/DUR: UB[i]+6=40 <= LB[j]=5 OR UB[j]+6=26 <= LB[i]=26
+[SAT] prune pair (i=39, j=212) by LB/UB/DUR: UB[i]+6=40 <= LB[j]=42 OR UB[j]+6=48 <= LB[i]=26
+[SAT] prune pair (i=49, j=62) by LB/UB/DUR: UB[i]+6=18 <= LB[j]=33 OR UB[j]+6=40 <= LB[i]=4
+[SAT] prune pair (i=49, j=86) by LB/UB/DUR: UB[i]+6=18 <= LB[j]=34 OR UB[j]+6=48 <= LB[i]=4
+[SAT] prune pair (i=49, j=110) by LB/UB/DUR: UB[i]+6=18 <= LB[j]=41 OR UB[j]+6=48 <= LB[i]=4
+[SAT] prune pair (i=49, j=132) by LB/UB/DUR: UB[i]+6=18 <= LB[j]=26 OR UB[j]+6=32 <= LB[i]=4
+[SAT] prune pair (i=49, j=150) by LB/UB/DUR: UB[i]+6=18 <= LB[j]=27 OR UB[j]+6=40 <= LB[i]=4
+[SAT] prune pair (i=49, j=170) by LB/UB/DUR: UB[i]+6=18 <= LB[j]=34 OR UB[j]+6=40 <= LB[i]=4
+[SAT] prune pair (i=49, j=191) by LB/UB/DUR: UB[i]+6=18 <= LB[j]=35 OR UB[j]+6=48 <= LB[i]=4
+[SAT] prune pair (i=49, j=212) by LB/UB/DUR: UB[i]+6=18 <= LB[j]=42 OR UB[j]+6=48 <= LB[i]=4
+[SAT] prune pair (i=60, j=62) by LB/UB/DUR: UB[i]+6=30 <= LB[j]=33 OR UB[j]+6=40 <= LB[i]=16
+[SAT] prune pair (i=60, j=86) by LB/UB/DUR: UB[i]+6=30 <= LB[j]=34 OR UB[j]+6=48 <= LB[i]=16
+[SAT] prune pair (i=60, j=110) by LB/UB/DUR: UB[i]+6=30 <= LB[j]=41 OR UB[j]+6=48 <= LB[i]=16
+[SAT] prune pair (i=60, j=124) by LB/UB/DUR: UB[i]+6=30 <= LB[j]=4 OR UB[j]+6=10 <= LB[i]=16
+[SAT] prune pair (i=60, j=170) by LB/UB/DUR: UB[i]+6=30 <= LB[j]=34 OR UB[j]+6=40 <= LB[i]=16
+[SAT] prune pair (i=60, j=191) by LB/UB/DUR: UB[i]+6=30 <= LB[j]=35 OR UB[j]+6=48 <= LB[i]=16
+[SAT] prune pair (i=60, j=212) by LB/UB/DUR: UB[i]+6=30 <= LB[j]=42 OR UB[j]+6=48 <= LB[i]=16
+[SAT] prune pair (i=62, j=73) by LB/UB/DUR: UB[i]+6=40 <= LB[j]=4 OR UB[j]+6=26 <= LB[i]=33
+[SAT] prune pair (i=62, j=97) by LB/UB/DUR: UB[i]+6=40 <= LB[j]=4 OR UB[j]+6=26 <= LB[i]=33
+[SAT] prune pair (i=62, j=110) by LB/UB/DUR: UB[i]+6=40 <= LB[j]=41 OR UB[j]+6=48 <= LB[i]=33
+[SAT] prune pair (i=62, j=124) by LB/UB/DUR: UB[i]+6=40 <= LB[j]=4 OR UB[j]+6=10 <= LB[i]=33
+[SAT] prune pair (i=62, j=130) by LB/UB/DUR: UB[i]+6=40 <= LB[j]=16 OR UB[j]+6=22 <= LB[i]=33
+[SAT] prune pair (i=62, j=132) by LB/UB/DUR: UB[i]+6=40 <= LB[j]=26 OR UB[j]+6=32 <= LB[i]=33
+[SAT] prune pair (i=62, j=142) by LB/UB/DUR: UB[i]+6=40 <= LB[j]=5 OR UB[j]+6=18 <= LB[i]=33
+[SAT] prune pair (i=62, j=148) by LB/UB/DUR: UB[i]+6=40 <= LB[j]=17 OR UB[j]+6=30 <= LB[i]=33
+[SAT] prune pair (i=62, j=161) by LB/UB/DUR: UB[i]+6=40 <= LB[j]=5 OR UB[j]+6=18 <= LB[i]=33
+[SAT] prune pair (i=62, j=168) by LB/UB/DUR: UB[i]+6=40 <= LB[j]=17 OR UB[j]+6=30 <= LB[i]=33
+[SAT] prune pair (i=62, j=182) by LB/UB/DUR: UB[i]+6=40 <= LB[j]=5 OR UB[j]+6=26 <= LB[i]=33
+[SAT] prune pair (i=62, j=203) by LB/UB/DUR: UB[i]+6=40 <= LB[j]=5 OR UB[j]+6=26 <= LB[i]=33
+[SAT] prune pair (i=62, j=212) by LB/UB/DUR: UB[i]+6=40 <= LB[j]=42 OR UB[j]+6=48 <= LB[i]=33
+[SAT] prune pair (i=73, j=86) by LB/UB/DUR: UB[i]+6=26 <= LB[j]=34 OR UB[j]+6=48 <= LB[i]=4
+[SAT] prune pair (i=73, j=110) by LB/UB/DUR: UB[i]+6=26 <= LB[j]=41 OR UB[j]+6=48 <= LB[i]=4
+[SAT] prune pair (i=73, j=132) by LB/UB/DUR: UB[i]+6=26 <= LB[j]=26 OR UB[j]+6=32 <= LB[i]=4
+[SAT] prune pair (i=73, j=150) by LB/UB/DUR: UB[i]+6=26 <= LB[j]=27 OR UB[j]+6=40 <= LB[i]=4
+[SAT] prune pair (i=73, j=170) by LB/UB/DUR: UB[i]+6=26 <= LB[j]=34 OR UB[j]+6=40 <= LB[i]=4
+[SAT] prune pair (i=73, j=191) by LB/UB/DUR: UB[i]+6=26 <= LB[j]=35 OR UB[j]+6=48 <= LB[i]=4
+[SAT] prune pair (i=73, j=212) by LB/UB/DUR: UB[i]+6=26 <= LB[j]=42 OR UB[j]+6=48 <= LB[i]=4
+[SAT] prune pair (i=84, j=110) by LB/UB/DUR: UB[i]+6=38 <= LB[j]=41 OR UB[j]+6=48 <= LB[i]=16
+[SAT] prune pair (i=84, j=124) by LB/UB/DUR: UB[i]+6=38 <= LB[j]=4 OR UB[j]+6=10 <= LB[i]=16
+[SAT] prune pair (i=84, j=212) by LB/UB/DUR: UB[i]+6=38 <= LB[j]=42 OR UB[j]+6=48 <= LB[i]=16
+[SAT] prune pair (i=86, j=97) by LB/UB/DUR: UB[i]+6=48 <= LB[j]=4 OR UB[j]+6=26 <= LB[i]=34
+[SAT] prune pair (i=86, j=124) by LB/UB/DUR: UB[i]+6=48 <= LB[j]=4 OR UB[j]+6=10 <= LB[i]=34
+[SAT] prune pair (i=86, j=130) by LB/UB/DUR: UB[i]+6=48 <= LB[j]=16 OR UB[j]+6=22 <= LB[i]=34
+[SAT] prune pair (i=86, j=132) by LB/UB/DUR: UB[i]+6=48 <= LB[j]=26 OR UB[j]+6=32 <= LB[i]=34
+[SAT] prune pair (i=86, j=142) by LB/UB/DUR: UB[i]+6=48 <= LB[j]=5 OR UB[j]+6=18 <= LB[i]=34
+[SAT] prune pair (i=86, j=148) by LB/UB/DUR: UB[i]+6=48 <= LB[j]=17 OR UB[j]+6=30 <= LB[i]=34
+[SAT] prune pair (i=86, j=161) by LB/UB/DUR: UB[i]+6=48 <= LB[j]=5 OR UB[j]+6=18 <= LB[i]=34
+[SAT] prune pair (i=86, j=168) by LB/UB/DUR: UB[i]+6=48 <= LB[j]=17 OR UB[j]+6=30 <= LB[i]=34
+[SAT] prune pair (i=86, j=182) by LB/UB/DUR: UB[i]+6=48 <= LB[j]=5 OR UB[j]+6=26 <= LB[i]=34
+[SAT] prune pair (i=86, j=203) by LB/UB/DUR: UB[i]+6=48 <= LB[j]=5 OR UB[j]+6=26 <= LB[i]=34
+[SAT] prune pair (i=97, j=110) by LB/UB/DUR: UB[i]+6=26 <= LB[j]=41 OR UB[j]+6=48 <= LB[i]=4
+[SAT] prune pair (i=97, j=132) by LB/UB/DUR: UB[i]+6=26 <= LB[j]=26 OR UB[j]+6=32 <= LB[i]=4
+[SAT] prune pair (i=97, j=150) by LB/UB/DUR: UB[i]+6=26 <= LB[j]=27 OR UB[j]+6=40 <= LB[i]=4
+[SAT] prune pair (i=97, j=170) by LB/UB/DUR: UB[i]+6=26 <= LB[j]=34 OR UB[j]+6=40 <= LB[i]=4
+[SAT] prune pair (i=97, j=191) by LB/UB/DUR: UB[i]+6=26 <= LB[j]=35 OR UB[j]+6=48 <= LB[i]=4
+[SAT] prune pair (i=97, j=212) by LB/UB/DUR: UB[i]+6=26 <= LB[j]=42 OR UB[j]+6=48 <= LB[i]=4
+[SAT] prune pair (i=108, j=110) by LB/UB/DUR: UB[i]+6=38 <= LB[j]=41 OR UB[j]+6=48 <= LB[i]=16
+[SAT] prune pair (i=108, j=124) by LB/UB/DUR: UB[i]+6=38 <= LB[j]=4 OR UB[j]+6=10 <= LB[i]=16
+[SAT] prune pair (i=108, j=212) by LB/UB/DUR: UB[i]+6=38 <= LB[j]=42 OR UB[j]+6=48 <= LB[i]=16
+[SAT] prune pair (i=110, j=124) by LB/UB/DUR: UB[i]+6=48 <= LB[j]=4 OR UB[j]+6=10 <= LB[i]=41
+[SAT] prune pair (i=110, j=130) by LB/UB/DUR: UB[i]+6=48 <= LB[j]=16 OR UB[j]+6=22 <= LB[i]=41
+[SAT] prune pair (i=110, j=132) by LB/UB/DUR: UB[i]+6=48 <= LB[j]=26 OR UB[j]+6=32 <= LB[i]=41
+[SAT] prune pair (i=110, j=142) by LB/UB/DUR: UB[i]+6=48 <= LB[j]=5 OR UB[j]+6=18 <= LB[i]=41
+[SAT] prune pair (i=110, j=148) by LB/UB/DUR: UB[i]+6=48 <= LB[j]=17 OR UB[j]+6=30 <= LB[i]=41
+[SAT] prune pair (i=110, j=150) by LB/UB/DUR: UB[i]+6=48 <= LB[j]=27 OR UB[j]+6=40 <= LB[i]=41
+[SAT] prune pair (i=110, j=161) by LB/UB/DUR: UB[i]+6=48 <= LB[j]=5 OR UB[j]+6=18 <= LB[i]=41
+[SAT] prune pair (i=110, j=168) by LB/UB/DUR: UB[i]+6=48 <= LB[j]=17 OR UB[j]+6=30 <= LB[i]=41
+[SAT] prune pair (i=110, j=170) by LB/UB/DUR: UB[i]+6=48 <= LB[j]=34 OR UB[j]+6=40 <= LB[i]=41
+[SAT] prune pair (i=110, j=182) by LB/UB/DUR: UB[i]+6=48 <= LB[j]=5 OR UB[j]+6=26 <= LB[i]=41
+[SAT] prune pair (i=110, j=189) by LB/UB/DUR: UB[i]+6=48 <= LB[j]=17 OR UB[j]+6=38 <= LB[i]=41
+[SAT] prune pair (i=110, j=203) by LB/UB/DUR: UB[i]+6=48 <= LB[j]=5 OR UB[j]+6=26 <= LB[i]=41
+[SAT] prune pair (i=110, j=210) by LB/UB/DUR: UB[i]+6=48 <= LB[j]=17 OR UB[j]+6=38 <= LB[i]=41
+[SAT] prune pair (i=124, j=130) by LB/UB/DUR: UB[i]+6=10 <= LB[j]=16 OR UB[j]+6=22 <= LB[i]=4
+[SAT] prune pair (i=124, j=132) by LB/UB/DUR: UB[i]+6=10 <= LB[j]=26 OR UB[j]+6=32 <= LB[i]=4
+[SAT] prune pair (i=124, j=148) by LB/UB/DUR: UB[i]+6=10 <= LB[j]=17 OR UB[j]+6=30 <= LB[i]=4
+[SAT] prune pair (i=124, j=150) by LB/UB/DUR: UB[i]+6=10 <= LB[j]=27 OR UB[j]+6=40 <= LB[i]=4
+[SAT] prune pair (i=124, j=168) by LB/UB/DUR: UB[i]+6=10 <= LB[j]=17 OR UB[j]+6=30 <= LB[i]=4
+[SAT] prune pair (i=124, j=170) by LB/UB/DUR: UB[i]+6=10 <= LB[j]=34 OR UB[j]+6=40 <= LB[i]=4
+[SAT] prune pair (i=124, j=189) by LB/UB/DUR: UB[i]+6=10 <= LB[j]=17 OR UB[j]+6=38 <= LB[i]=4
+[SAT] prune pair (i=124, j=191) by LB/UB/DUR: UB[i]+6=10 <= LB[j]=35 OR UB[j]+6=48 <= LB[i]=4
+[SAT] prune pair (i=124, j=210) by LB/UB/DUR: UB[i]+6=10 <= LB[j]=17 OR UB[j]+6=38 <= LB[i]=4
+[SAT] prune pair (i=124, j=212) by LB/UB/DUR: UB[i]+6=10 <= LB[j]=42 OR UB[j]+6=48 <= LB[i]=4
+[SAT] prune pair (i=130, j=132) by LB/UB/DUR: UB[i]+6=22 <= LB[j]=26 OR UB[j]+6=32 <= LB[i]=16
+[SAT] prune pair (i=130, j=150) by LB/UB/DUR: UB[i]+6=22 <= LB[j]=27 OR UB[j]+6=40 <= LB[i]=16
+[SAT] prune pair (i=130, j=170) by LB/UB/DUR: UB[i]+6=22 <= LB[j]=34 OR UB[j]+6=40 <= LB[i]=16
+[SAT] prune pair (i=130, j=191) by LB/UB/DUR: UB[i]+6=22 <= LB[j]=35 OR UB[j]+6=48 <= LB[i]=16
+[SAT] prune pair (i=130, j=212) by LB/UB/DUR: UB[i]+6=22 <= LB[j]=42 OR UB[j]+6=48 <= LB[i]=16
+[SAT] prune pair (i=132, j=142) by LB/UB/DUR: UB[i]+6=32 <= LB[j]=5 OR UB[j]+6=18 <= LB[i]=26
+[SAT] prune pair (i=132, j=161) by LB/UB/DUR: UB[i]+6=32 <= LB[j]=5 OR UB[j]+6=18 <= LB[i]=26
+[SAT] prune pair (i=132, j=170) by LB/UB/DUR: UB[i]+6=32 <= LB[j]=34 OR UB[j]+6=40 <= LB[i]=26
+[SAT] prune pair (i=132, j=182) by LB/UB/DUR: UB[i]+6=32 <= LB[j]=5 OR UB[j]+6=26 <= LB[i]=26
+[SAT] prune pair (i=132, j=191) by LB/UB/DUR: UB[i]+6=32 <= LB[j]=35 OR UB[j]+6=48 <= LB[i]=26
+[SAT] prune pair (i=132, j=203) by LB/UB/DUR: UB[i]+6=32 <= LB[j]=5 OR UB[j]+6=26 <= LB[i]=26
+[SAT] prune pair (i=132, j=212) by LB/UB/DUR: UB[i]+6=32 <= LB[j]=42 OR UB[j]+6=48 <= LB[i]=26
+[SAT] prune pair (i=142, j=150) by LB/UB/DUR: UB[i]+6=18 <= LB[j]=27 OR UB[j]+6=40 <= LB[i]=5
+[SAT] prune pair (i=142, j=170) by LB/UB/DUR: UB[i]+6=18 <= LB[j]=34 OR UB[j]+6=40 <= LB[i]=5
+[SAT] prune pair (i=142, j=191) by LB/UB/DUR: UB[i]+6=18 <= LB[j]=35 OR UB[j]+6=48 <= LB[i]=5
+[SAT] prune pair (i=142, j=212) by LB/UB/DUR: UB[i]+6=18 <= LB[j]=42 OR UB[j]+6=48 <= LB[i]=5
+[SAT] prune pair (i=148, j=170) by LB/UB/DUR: UB[i]+6=30 <= LB[j]=34 OR UB[j]+6=40 <= LB[i]=17
+[SAT] prune pair (i=148, j=191) by LB/UB/DUR: UB[i]+6=30 <= LB[j]=35 OR UB[j]+6=48 <= LB[i]=17
+[SAT] prune pair (i=148, j=212) by LB/UB/DUR: UB[i]+6=30 <= LB[j]=42 OR UB[j]+6=48 <= LB[i]=17
+[SAT] prune pair (i=150, j=161) by LB/UB/DUR: UB[i]+6=40 <= LB[j]=5 OR UB[j]+6=18 <= LB[i]=27
+[SAT] prune pair (i=150, j=182) by LB/UB/DUR: UB[i]+6=40 <= LB[j]=5 OR UB[j]+6=26 <= LB[i]=27
+[SAT] prune pair (i=150, j=203) by LB/UB/DUR: UB[i]+6=40 <= LB[j]=5 OR UB[j]+6=26 <= LB[i]=27
+[SAT] prune pair (i=150, j=212) by LB/UB/DUR: UB[i]+6=40 <= LB[j]=42 OR UB[j]+6=48 <= LB[i]=27
+[SAT] prune pair (i=161, j=170) by LB/UB/DUR: UB[i]+6=18 <= LB[j]=34 OR UB[j]+6=40 <= LB[i]=5
+[SAT] prune pair (i=161, j=191) by LB/UB/DUR: UB[i]+6=18 <= LB[j]=35 OR UB[j]+6=48 <= LB[i]=5
+[SAT] prune pair (i=161, j=212) by LB/UB/DUR: UB[i]+6=18 <= LB[j]=42 OR UB[j]+6=48 <= LB[i]=5
+[SAT] prune pair (i=168, j=170) by LB/UB/DUR: UB[i]+6=30 <= LB[j]=34 OR UB[j]+6=40 <= LB[i]=17
+[SAT] prune pair (i=168, j=191) by LB/UB/DUR: UB[i]+6=30 <= LB[j]=35 OR UB[j]+6=48 <= LB[i]=17
+[SAT] prune pair (i=168, j=212) by LB/UB/DUR: UB[i]+6=30 <= LB[j]=42 OR UB[j]+6=48 <= LB[i]=17
+[SAT] prune pair (i=170, j=182) by LB/UB/DUR: UB[i]+6=40 <= LB[j]=5 OR UB[j]+6=26 <= LB[i]=34
+[SAT] prune pair (i=170, j=203) by LB/UB/DUR: UB[i]+6=40 <= LB[j]=5 OR UB[j]+6=26 <= LB[i]=34
+[SAT] prune pair (i=170, j=212) by LB/UB/DUR: UB[i]+6=40 <= LB[j]=42 OR UB[j]+6=48 <= LB[i]=34
+[SAT] prune pair (i=182, j=191) by LB/UB/DUR: UB[i]+6=26 <= LB[j]=35 OR UB[j]+6=48 <= LB[i]=5
+[SAT] prune pair (i=182, j=212) by LB/UB/DUR: UB[i]+6=26 <= LB[j]=42 OR UB[j]+6=48 <= LB[i]=5
+[SAT] prune pair (i=189, j=212) by LB/UB/DUR: UB[i]+6=38 <= LB[j]=42 OR UB[j]+6=48 <= LB[i]=17
+[SAT] prune pair (i=191, j=203) by LB/UB/DUR: UB[i]+6=48 <= LB[j]=5 OR UB[j]+6=26 <= LB[i]=35
+[SAT] prune pair (i=203, j=212) by LB/UB/DUR: UB[i]+6=26 <= LB[j]=42 OR UB[j]+6=48 <= LB[i]=5
+[SAT] prune pair (i=210, j=212) by LB/UB/DUR: UB[i]+6=38 <= LB[j]=42 OR UB[j]+6=48 <= LB[i]=17
+[SAT] encode resource type 0 : size=37 limit=2
+[SAT] prune pair (i=1, j=44) by LB/UB/DUR: UB[i]+1=26 <= LB[j]=32 OR UB[j]+1=34 <= LB[i]=1
+[SAT] prune pair (i=1, j=68) by LB/UB/DUR: UB[i]+1=26 <= LB[j]=33 OR UB[j]+1=42 <= LB[i]=1
+[SAT] prune pair (i=1, j=92) by LB/UB/DUR: UB[i]+1=26 <= LB[j]=40 OR UB[j]+1=42 <= LB[i]=1
+[SAT] prune pair (i=1, j=155) by LB/UB/DUR: UB[i]+1=26 <= LB[j]=33 OR UB[j]+1=34 <= LB[i]=1
+[SAT] prune pair (i=1, j=176) by LB/UB/DUR: UB[i]+1=26 <= LB[j]=34 OR UB[j]+1=42 <= LB[i]=1
+[SAT] prune pair (i=1, j=197) by LB/UB/DUR: UB[i]+1=26 <= LB[j]=41 OR UB[j]+1=42 <= LB[i]=1
+[SAT] prune pair (i=4, j=44) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=32 OR UB[j]+1=34 <= LB[i]=2
+[SAT] prune pair (i=4, j=54) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=18 <= LB[i]=2
+[SAT] prune pair (i=4, j=68) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=33 OR UB[j]+1=42 <= LB[i]=2
+[SAT] prune pair (i=4, j=78) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=26 <= LB[i]=2
+[SAT] prune pair (i=4, j=92) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=40 OR UB[j]+1=42 <= LB[i]=2
+[SAT] prune pair (i=4, j=102) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=26 <= LB[i]=2
+[SAT] prune pair (i=4, j=141) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=12 <= LB[i]=2
+[SAT] prune pair (i=4, j=155) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=33 OR UB[j]+1=34 <= LB[i]=2
+[SAT] prune pair (i=4, j=160) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=12 <= LB[i]=2
+[SAT] prune pair (i=4, j=166) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=18 <= LB[i]=2
+[SAT] prune pair (i=4, j=176) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=34 OR UB[j]+1=42 <= LB[i]=2
+[SAT] prune pair (i=4, j=181) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=20 <= LB[i]=2
+[SAT] prune pair (i=4, j=187) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=26 <= LB[i]=2
+[SAT] prune pair (i=4, j=197) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=41 OR UB[j]+1=42 <= LB[i]=2
+[SAT] prune pair (i=4, j=202) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=20 <= LB[i]=2
+[SAT] prune pair (i=4, j=208) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=26 <= LB[i]=2
+[SAT] prune pair (i=7, j=44) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=32 OR UB[j]+1=34 <= LB[i]=2
+[SAT] prune pair (i=7, j=54) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=18 <= LB[i]=2
+[SAT] prune pair (i=7, j=68) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=33 OR UB[j]+1=42 <= LB[i]=2
+[SAT] prune pair (i=7, j=78) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=26 <= LB[i]=2
+[SAT] prune pair (i=7, j=92) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=40 OR UB[j]+1=42 <= LB[i]=2
+[SAT] prune pair (i=7, j=102) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=26 <= LB[i]=2
+[SAT] prune pair (i=7, j=141) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=12 <= LB[i]=2
+[SAT] prune pair (i=7, j=155) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=33 OR UB[j]+1=34 <= LB[i]=2
+[SAT] prune pair (i=7, j=160) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=12 <= LB[i]=2
+[SAT] prune pair (i=7, j=166) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=18 <= LB[i]=2
+[SAT] prune pair (i=7, j=176) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=34 OR UB[j]+1=42 <= LB[i]=2
+[SAT] prune pair (i=7, j=181) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=20 <= LB[i]=2
+[SAT] prune pair (i=7, j=187) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=26 <= LB[i]=2
+[SAT] prune pair (i=7, j=197) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=41 OR UB[j]+1=42 <= LB[i]=2
+[SAT] prune pair (i=7, j=202) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=20 <= LB[i]=2
+[SAT] prune pair (i=7, j=208) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=26 <= LB[i]=2
+[SAT] prune pair (i=12, j=44) by LB/UB/DUR: UB[i]+1=10 <= LB[j]=32 OR UB[j]+1=34 <= LB[i]=3
+[SAT] prune pair (i=12, j=68) by LB/UB/DUR: UB[i]+1=10 <= LB[j]=33 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=12, j=92) by LB/UB/DUR: UB[i]+1=10 <= LB[j]=40 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=12, j=155) by LB/UB/DUR: UB[i]+1=10 <= LB[j]=33 OR UB[j]+1=34 <= LB[i]=3
+[SAT] prune pair (i=12, j=176) by LB/UB/DUR: UB[i]+1=10 <= LB[j]=34 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=12, j=197) by LB/UB/DUR: UB[i]+1=10 <= LB[j]=41 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=16, j=44) by LB/UB/DUR: UB[i]+1=16 <= LB[j]=32 OR UB[j]+1=34 <= LB[i]=2
+[SAT] prune pair (i=16, j=68) by LB/UB/DUR: UB[i]+1=16 <= LB[j]=33 OR UB[j]+1=42 <= LB[i]=2
+[SAT] prune pair (i=16, j=92) by LB/UB/DUR: UB[i]+1=16 <= LB[j]=40 OR UB[j]+1=42 <= LB[i]=2
+[SAT] prune pair (i=16, j=155) by LB/UB/DUR: UB[i]+1=16 <= LB[j]=33 OR UB[j]+1=34 <= LB[i]=2
+[SAT] prune pair (i=16, j=176) by LB/UB/DUR: UB[i]+1=16 <= LB[j]=34 OR UB[j]+1=42 <= LB[i]=2
+[SAT] prune pair (i=16, j=197) by LB/UB/DUR: UB[i]+1=16 <= LB[j]=41 OR UB[j]+1=42 <= LB[i]=2
+[SAT] prune pair (i=23, j=92) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=40 OR UB[j]+1=42 <= LB[i]=1
+[SAT] prune pair (i=23, j=176) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=34 OR UB[j]+1=42 <= LB[i]=1
+[SAT] prune pair (i=23, j=197) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=41 OR UB[j]+1=42 <= LB[i]=1
+[SAT] prune pair (i=27, j=44) by LB/UB/DUR: UB[i]+1=12 <= LB[j]=32 OR UB[j]+1=34 <= LB[i]=3
+[SAT] prune pair (i=27, j=68) by LB/UB/DUR: UB[i]+1=12 <= LB[j]=33 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=27, j=92) by LB/UB/DUR: UB[i]+1=12 <= LB[j]=40 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=27, j=155) by LB/UB/DUR: UB[i]+1=12 <= LB[j]=33 OR UB[j]+1=34 <= LB[i]=3
+[SAT] prune pair (i=27, j=176) by LB/UB/DUR: UB[i]+1=12 <= LB[j]=34 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=27, j=197) by LB/UB/DUR: UB[i]+1=12 <= LB[j]=41 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=32, j=44) by LB/UB/DUR: UB[i]+1=18 <= LB[j]=32 OR UB[j]+1=34 <= LB[i]=3
+[SAT] prune pair (i=32, j=68) by LB/UB/DUR: UB[i]+1=18 <= LB[j]=33 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=32, j=92) by LB/UB/DUR: UB[i]+1=18 <= LB[j]=40 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=32, j=155) by LB/UB/DUR: UB[i]+1=18 <= LB[j]=33 OR UB[j]+1=34 <= LB[i]=3
+[SAT] prune pair (i=32, j=176) by LB/UB/DUR: UB[i]+1=18 <= LB[j]=34 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=32, j=197) by LB/UB/DUR: UB[i]+1=18 <= LB[j]=41 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=36, j=44) by LB/UB/DUR: UB[i]+1=24 <= LB[j]=32 OR UB[j]+1=34 <= LB[i]=2
+[SAT] prune pair (i=36, j=68) by LB/UB/DUR: UB[i]+1=24 <= LB[j]=33 OR UB[j]+1=42 <= LB[i]=2
+[SAT] prune pair (i=36, j=92) by LB/UB/DUR: UB[i]+1=24 <= LB[j]=40 OR UB[j]+1=42 <= LB[i]=2
+[SAT] prune pair (i=36, j=155) by LB/UB/DUR: UB[i]+1=24 <= LB[j]=33 OR UB[j]+1=34 <= LB[i]=2
+[SAT] prune pair (i=36, j=176) by LB/UB/DUR: UB[i]+1=24 <= LB[j]=34 OR UB[j]+1=42 <= LB[i]=2
+[SAT] prune pair (i=36, j=197) by LB/UB/DUR: UB[i]+1=24 <= LB[j]=41 OR UB[j]+1=42 <= LB[i]=2
+[SAT] prune pair (i=44, j=48) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=3 OR UB[j]+1=12 <= LB[i]=32
+[SAT] prune pair (i=44, j=54) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=4 OR UB[j]+1=18 <= LB[i]=32
+[SAT] prune pair (i=44, j=59) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=3 OR UB[j]+1=24 <= LB[i]=32
+[SAT] prune pair (i=44, j=72) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=3 OR UB[j]+1=20 <= LB[i]=32
+[SAT] prune pair (i=44, j=78) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=4 OR UB[j]+1=26 <= LB[i]=32
+[SAT] prune pair (i=44, j=83) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=3 OR UB[j]+1=32 <= LB[i]=32
+[SAT] prune pair (i=44, j=92) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=40 OR UB[j]+1=42 <= LB[i]=32
+[SAT] prune pair (i=44, j=96) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=3 OR UB[j]+1=20 <= LB[i]=32
+[SAT] prune pair (i=44, j=102) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=4 OR UB[j]+1=26 <= LB[i]=32
+[SAT] prune pair (i=44, j=107) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=3 OR UB[j]+1=32 <= LB[i]=32
+[SAT] prune pair (i=44, j=115) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=1 OR UB[j]+1=26 <= LB[i]=32
+[SAT] prune pair (i=44, j=119) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=3 OR UB[j]+1=4 <= LB[i]=32
+[SAT] prune pair (i=44, j=123) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=3 OR UB[j]+1=4 <= LB[i]=32
+[SAT] prune pair (i=44, j=128) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=3 OR UB[j]+1=10 <= LB[i]=32
+[SAT] prune pair (i=44, j=141) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=4 OR UB[j]+1=12 <= LB[i]=32
+[SAT] prune pair (i=44, j=146) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=3 OR UB[j]+1=18 <= LB[i]=32
+[SAT] prune pair (i=44, j=160) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=4 OR UB[j]+1=12 <= LB[i]=32
+[SAT] prune pair (i=44, j=166) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=4 OR UB[j]+1=18 <= LB[i]=32
+[SAT] prune pair (i=44, j=176) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=34 OR UB[j]+1=42 <= LB[i]=32
+[SAT] prune pair (i=44, j=181) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=4 OR UB[j]+1=20 <= LB[i]=32
+[SAT] prune pair (i=44, j=187) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=4 OR UB[j]+1=26 <= LB[i]=32
+[SAT] prune pair (i=44, j=197) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=41 OR UB[j]+1=42 <= LB[i]=32
+[SAT] prune pair (i=44, j=202) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=4 OR UB[j]+1=20 <= LB[i]=32
+[SAT] prune pair (i=44, j=208) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=4 OR UB[j]+1=26 <= LB[i]=32
+[SAT] prune pair (i=48, j=68) by LB/UB/DUR: UB[i]+1=12 <= LB[j]=33 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=48, j=92) by LB/UB/DUR: UB[i]+1=12 <= LB[j]=40 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=48, j=155) by LB/UB/DUR: UB[i]+1=12 <= LB[j]=33 OR UB[j]+1=34 <= LB[i]=3
+[SAT] prune pair (i=48, j=176) by LB/UB/DUR: UB[i]+1=12 <= LB[j]=34 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=48, j=197) by LB/UB/DUR: UB[i]+1=12 <= LB[j]=41 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=54, j=68) by LB/UB/DUR: UB[i]+1=18 <= LB[j]=33 OR UB[j]+1=42 <= LB[i]=4
+[SAT] prune pair (i=54, j=92) by LB/UB/DUR: UB[i]+1=18 <= LB[j]=40 OR UB[j]+1=42 <= LB[i]=4
+[SAT] prune pair (i=54, j=119) by LB/UB/DUR: UB[i]+1=18 <= LB[j]=3 OR UB[j]+1=4 <= LB[i]=4
+[SAT] prune pair (i=54, j=123) by LB/UB/DUR: UB[i]+1=18 <= LB[j]=3 OR UB[j]+1=4 <= LB[i]=4
+[SAT] prune pair (i=54, j=155) by LB/UB/DUR: UB[i]+1=18 <= LB[j]=33 OR UB[j]+1=34 <= LB[i]=4
+[SAT] prune pair (i=54, j=176) by LB/UB/DUR: UB[i]+1=18 <= LB[j]=34 OR UB[j]+1=42 <= LB[i]=4
+[SAT] prune pair (i=54, j=197) by LB/UB/DUR: UB[i]+1=18 <= LB[j]=41 OR UB[j]+1=42 <= LB[i]=4
+[SAT] prune pair (i=59, j=68) by LB/UB/DUR: UB[i]+1=24 <= LB[j]=33 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=59, j=92) by LB/UB/DUR: UB[i]+1=24 <= LB[j]=40 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=59, j=155) by LB/UB/DUR: UB[i]+1=24 <= LB[j]=33 OR UB[j]+1=34 <= LB[i]=3
+[SAT] prune pair (i=59, j=176) by LB/UB/DUR: UB[i]+1=24 <= LB[j]=34 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=59, j=197) by LB/UB/DUR: UB[i]+1=24 <= LB[j]=41 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=68, j=72) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=3 OR UB[j]+1=20 <= LB[i]=33
+[SAT] prune pair (i=68, j=78) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=4 OR UB[j]+1=26 <= LB[i]=33
+[SAT] prune pair (i=68, j=83) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=3 OR UB[j]+1=32 <= LB[i]=33
+[SAT] prune pair (i=68, j=96) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=3 OR UB[j]+1=20 <= LB[i]=33
+[SAT] prune pair (i=68, j=102) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=4 OR UB[j]+1=26 <= LB[i]=33
+[SAT] prune pair (i=68, j=107) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=3 OR UB[j]+1=32 <= LB[i]=33
+[SAT] prune pair (i=68, j=115) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=1 OR UB[j]+1=26 <= LB[i]=33
+[SAT] prune pair (i=68, j=119) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=3 OR UB[j]+1=4 <= LB[i]=33
+[SAT] prune pair (i=68, j=123) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=3 OR UB[j]+1=4 <= LB[i]=33
+[SAT] prune pair (i=68, j=128) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=3 OR UB[j]+1=10 <= LB[i]=33
+[SAT] prune pair (i=68, j=141) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=4 OR UB[j]+1=12 <= LB[i]=33
+[SAT] prune pair (i=68, j=146) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=3 OR UB[j]+1=18 <= LB[i]=33
+[SAT] prune pair (i=68, j=160) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=4 OR UB[j]+1=12 <= LB[i]=33
+[SAT] prune pair (i=68, j=166) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=4 OR UB[j]+1=18 <= LB[i]=33
+[SAT] prune pair (i=68, j=181) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=4 OR UB[j]+1=20 <= LB[i]=33
+[SAT] prune pair (i=68, j=187) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=4 OR UB[j]+1=26 <= LB[i]=33
+[SAT] prune pair (i=68, j=202) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=4 OR UB[j]+1=20 <= LB[i]=33
+[SAT] prune pair (i=68, j=208) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=4 OR UB[j]+1=26 <= LB[i]=33
+[SAT] prune pair (i=72, j=92) by LB/UB/DUR: UB[i]+1=20 <= LB[j]=40 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=72, j=155) by LB/UB/DUR: UB[i]+1=20 <= LB[j]=33 OR UB[j]+1=34 <= LB[i]=3
+[SAT] prune pair (i=72, j=176) by LB/UB/DUR: UB[i]+1=20 <= LB[j]=34 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=72, j=197) by LB/UB/DUR: UB[i]+1=20 <= LB[j]=41 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=78, j=92) by LB/UB/DUR: UB[i]+1=26 <= LB[j]=40 OR UB[j]+1=42 <= LB[i]=4
+[SAT] prune pair (i=78, j=119) by LB/UB/DUR: UB[i]+1=26 <= LB[j]=3 OR UB[j]+1=4 <= LB[i]=4
+[SAT] prune pair (i=78, j=123) by LB/UB/DUR: UB[i]+1=26 <= LB[j]=3 OR UB[j]+1=4 <= LB[i]=4
+[SAT] prune pair (i=78, j=155) by LB/UB/DUR: UB[i]+1=26 <= LB[j]=33 OR UB[j]+1=34 <= LB[i]=4
+[SAT] prune pair (i=78, j=176) by LB/UB/DUR: UB[i]+1=26 <= LB[j]=34 OR UB[j]+1=42 <= LB[i]=4
+[SAT] prune pair (i=78, j=197) by LB/UB/DUR: UB[i]+1=26 <= LB[j]=41 OR UB[j]+1=42 <= LB[i]=4
+[SAT] prune pair (i=83, j=92) by LB/UB/DUR: UB[i]+1=32 <= LB[j]=40 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=83, j=155) by LB/UB/DUR: UB[i]+1=32 <= LB[j]=33 OR UB[j]+1=34 <= LB[i]=3
+[SAT] prune pair (i=83, j=176) by LB/UB/DUR: UB[i]+1=32 <= LB[j]=34 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=83, j=197) by LB/UB/DUR: UB[i]+1=32 <= LB[j]=41 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=92, j=96) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=3 OR UB[j]+1=20 <= LB[i]=40
+[SAT] prune pair (i=92, j=102) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=4 OR UB[j]+1=26 <= LB[i]=40
+[SAT] prune pair (i=92, j=107) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=3 OR UB[j]+1=32 <= LB[i]=40
+[SAT] prune pair (i=92, j=115) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=1 OR UB[j]+1=26 <= LB[i]=40
+[SAT] prune pair (i=92, j=119) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=3 OR UB[j]+1=4 <= LB[i]=40
+[SAT] prune pair (i=92, j=123) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=3 OR UB[j]+1=4 <= LB[i]=40
+[SAT] prune pair (i=92, j=128) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=3 OR UB[j]+1=10 <= LB[i]=40
+[SAT] prune pair (i=92, j=136) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=1 OR UB[j]+1=34 <= LB[i]=40
+[SAT] prune pair (i=92, j=141) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=4 OR UB[j]+1=12 <= LB[i]=40
+[SAT] prune pair (i=92, j=146) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=3 OR UB[j]+1=18 <= LB[i]=40
+[SAT] prune pair (i=92, j=155) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=33 OR UB[j]+1=34 <= LB[i]=40
+[SAT] prune pair (i=92, j=160) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=4 OR UB[j]+1=12 <= LB[i]=40
+[SAT] prune pair (i=92, j=166) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=4 OR UB[j]+1=18 <= LB[i]=40
+[SAT] prune pair (i=92, j=181) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=4 OR UB[j]+1=20 <= LB[i]=40
+[SAT] prune pair (i=92, j=187) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=4 OR UB[j]+1=26 <= LB[i]=40
+[SAT] prune pair (i=92, j=202) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=4 OR UB[j]+1=20 <= LB[i]=40
+[SAT] prune pair (i=92, j=208) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=4 OR UB[j]+1=26 <= LB[i]=40
+[SAT] prune pair (i=96, j=155) by LB/UB/DUR: UB[i]+1=20 <= LB[j]=33 OR UB[j]+1=34 <= LB[i]=3
+[SAT] prune pair (i=96, j=176) by LB/UB/DUR: UB[i]+1=20 <= LB[j]=34 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=96, j=197) by LB/UB/DUR: UB[i]+1=20 <= LB[j]=41 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=102, j=119) by LB/UB/DUR: UB[i]+1=26 <= LB[j]=3 OR UB[j]+1=4 <= LB[i]=4
+[SAT] prune pair (i=102, j=123) by LB/UB/DUR: UB[i]+1=26 <= LB[j]=3 OR UB[j]+1=4 <= LB[i]=4
+[SAT] prune pair (i=102, j=155) by LB/UB/DUR: UB[i]+1=26 <= LB[j]=33 OR UB[j]+1=34 <= LB[i]=4
+[SAT] prune pair (i=102, j=176) by LB/UB/DUR: UB[i]+1=26 <= LB[j]=34 OR UB[j]+1=42 <= LB[i]=4
+[SAT] prune pair (i=102, j=197) by LB/UB/DUR: UB[i]+1=26 <= LB[j]=41 OR UB[j]+1=42 <= LB[i]=4
+[SAT] prune pair (i=107, j=155) by LB/UB/DUR: UB[i]+1=32 <= LB[j]=33 OR UB[j]+1=34 <= LB[i]=3
+[SAT] prune pair (i=107, j=176) by LB/UB/DUR: UB[i]+1=32 <= LB[j]=34 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=107, j=197) by LB/UB/DUR: UB[i]+1=32 <= LB[j]=41 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=115, j=155) by LB/UB/DUR: UB[i]+1=26 <= LB[j]=33 OR UB[j]+1=34 <= LB[i]=1
+[SAT] prune pair (i=115, j=176) by LB/UB/DUR: UB[i]+1=26 <= LB[j]=34 OR UB[j]+1=42 <= LB[i]=1
+[SAT] prune pair (i=115, j=197) by LB/UB/DUR: UB[i]+1=26 <= LB[j]=41 OR UB[j]+1=42 <= LB[i]=1
+[SAT] prune pair (i=119, j=141) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=12 <= LB[i]=3
+[SAT] prune pair (i=119, j=155) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=33 OR UB[j]+1=34 <= LB[i]=3
+[SAT] prune pair (i=119, j=160) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=12 <= LB[i]=3
+[SAT] prune pair (i=119, j=166) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=18 <= LB[i]=3
+[SAT] prune pair (i=119, j=176) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=34 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=119, j=181) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=20 <= LB[i]=3
+[SAT] prune pair (i=119, j=187) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=26 <= LB[i]=3
+[SAT] prune pair (i=119, j=197) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=41 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=119, j=202) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=20 <= LB[i]=3
+[SAT] prune pair (i=119, j=208) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=26 <= LB[i]=3
+[SAT] prune pair (i=123, j=141) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=12 <= LB[i]=3
+[SAT] prune pair (i=123, j=155) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=33 OR UB[j]+1=34 <= LB[i]=3
+[SAT] prune pair (i=123, j=160) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=12 <= LB[i]=3
+[SAT] prune pair (i=123, j=166) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=18 <= LB[i]=3
+[SAT] prune pair (i=123, j=176) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=34 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=123, j=181) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=20 <= LB[i]=3
+[SAT] prune pair (i=123, j=187) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=26 <= LB[i]=3
+[SAT] prune pair (i=123, j=197) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=41 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=123, j=202) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=20 <= LB[i]=3
+[SAT] prune pair (i=123, j=208) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=26 <= LB[i]=3
+[SAT] prune pair (i=128, j=155) by LB/UB/DUR: UB[i]+1=10 <= LB[j]=33 OR UB[j]+1=34 <= LB[i]=3
+[SAT] prune pair (i=128, j=176) by LB/UB/DUR: UB[i]+1=10 <= LB[j]=34 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=128, j=197) by LB/UB/DUR: UB[i]+1=10 <= LB[j]=41 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=136, j=176) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=34 OR UB[j]+1=42 <= LB[i]=1
+[SAT] prune pair (i=136, j=197) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=41 OR UB[j]+1=42 <= LB[i]=1
+[SAT] prune pair (i=141, j=155) by LB/UB/DUR: UB[i]+1=12 <= LB[j]=33 OR UB[j]+1=34 <= LB[i]=4
+[SAT] prune pair (i=141, j=176) by LB/UB/DUR: UB[i]+1=12 <= LB[j]=34 OR UB[j]+1=42 <= LB[i]=4
+[SAT] prune pair (i=141, j=197) by LB/UB/DUR: UB[i]+1=12 <= LB[j]=41 OR UB[j]+1=42 <= LB[i]=4
+[SAT] prune pair (i=146, j=155) by LB/UB/DUR: UB[i]+1=18 <= LB[j]=33 OR UB[j]+1=34 <= LB[i]=3
+[SAT] prune pair (i=146, j=176) by LB/UB/DUR: UB[i]+1=18 <= LB[j]=34 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=146, j=197) by LB/UB/DUR: UB[i]+1=18 <= LB[j]=41 OR UB[j]+1=42 <= LB[i]=3
+[SAT] prune pair (i=155, j=160) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=4 OR UB[j]+1=12 <= LB[i]=33
+[SAT] prune pair (i=155, j=166) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=4 OR UB[j]+1=18 <= LB[i]=33
+[SAT] prune pair (i=155, j=176) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=34 OR UB[j]+1=42 <= LB[i]=33
+[SAT] prune pair (i=155, j=181) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=4 OR UB[j]+1=20 <= LB[i]=33
+[SAT] prune pair (i=155, j=187) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=4 OR UB[j]+1=26 <= LB[i]=33
+[SAT] prune pair (i=155, j=197) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=41 OR UB[j]+1=42 <= LB[i]=33
+[SAT] prune pair (i=155, j=202) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=4 OR UB[j]+1=20 <= LB[i]=33
+[SAT] prune pair (i=155, j=208) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=4 OR UB[j]+1=26 <= LB[i]=33
+[SAT] prune pair (i=160, j=176) by LB/UB/DUR: UB[i]+1=12 <= LB[j]=34 OR UB[j]+1=42 <= LB[i]=4
+[SAT] prune pair (i=160, j=197) by LB/UB/DUR: UB[i]+1=12 <= LB[j]=41 OR UB[j]+1=42 <= LB[i]=4
+[SAT] prune pair (i=166, j=176) by LB/UB/DUR: UB[i]+1=18 <= LB[j]=34 OR UB[j]+1=42 <= LB[i]=4
+[SAT] prune pair (i=166, j=197) by LB/UB/DUR: UB[i]+1=18 <= LB[j]=41 OR UB[j]+1=42 <= LB[i]=4
+[SAT] prune pair (i=176, j=181) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=4 OR UB[j]+1=20 <= LB[i]=34
+[SAT] prune pair (i=176, j=187) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=4 OR UB[j]+1=26 <= LB[i]=34
+[SAT] prune pair (i=176, j=202) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=4 OR UB[j]+1=20 <= LB[i]=34
+[SAT] prune pair (i=176, j=208) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=4 OR UB[j]+1=26 <= LB[i]=34
+[SAT] prune pair (i=181, j=197) by LB/UB/DUR: UB[i]+1=20 <= LB[j]=41 OR UB[j]+1=42 <= LB[i]=4
+[SAT] prune pair (i=187, j=197) by LB/UB/DUR: UB[i]+1=26 <= LB[j]=41 OR UB[j]+1=42 <= LB[i]=4
+[SAT] prune pair (i=197, j=202) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=4 OR UB[j]+1=20 <= LB[i]=41
+[SAT] prune pair (i=197, j=208) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=4 OR UB[j]+1=26 <= LB[i]=41
+[SAT] encode resource type 16 : size=10 limit=4
+[SAT] encode memory resource mem_id=7 : size=4 ports=2
+[SAT] prune pair (i=136, j=176) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=34 OR UB[j]+1=42 <= LB[i]=1
+[SAT] prune pair (i=136, j=194) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=41 OR UB[j]+1=49 <= LB[i]=1
+[SAT] prune pair (i=152, j=194) by LB/UB/DUR: UB[i]+1=41 <= LB[j]=41 OR UB[j]+1=49 <= LB[i]=33
+[SAT] encode memory resource mem_id=6 : size=6 ports=2
+[SAT] prune pair (i=115, j=134) by LB/UB/DUR: UB[i]+1=26 <= LB[j]=32 OR UB[j]+1=33 <= LB[i]=1
+[SAT] prune pair (i=115, j=155) by LB/UB/DUR: UB[i]+1=26 <= LB[j]=33 OR UB[j]+1=34 <= LB[i]=1
+[SAT] prune pair (i=115, j=173) by LB/UB/DUR: UB[i]+1=26 <= LB[j]=40 OR UB[j]+1=41 <= LB[i]=1
+[SAT] prune pair (i=115, j=197) by LB/UB/DUR: UB[i]+1=26 <= LB[j]=41 OR UB[j]+1=42 <= LB[i]=1
+[SAT] prune pair (i=115, j=215) by LB/UB/DUR: UB[i]+1=26 <= LB[j]=48 OR UB[j]+1=49 <= LB[i]=1
+[SAT] prune pair (i=134, j=155) by LB/UB/DUR: UB[i]+1=33 <= LB[j]=33 OR UB[j]+1=34 <= LB[i]=32
+[SAT] prune pair (i=134, j=173) by LB/UB/DUR: UB[i]+1=33 <= LB[j]=40 OR UB[j]+1=41 <= LB[i]=32
+[SAT] prune pair (i=134, j=197) by LB/UB/DUR: UB[i]+1=33 <= LB[j]=41 OR UB[j]+1=42 <= LB[i]=32
+[SAT] prune pair (i=134, j=215) by LB/UB/DUR: UB[i]+1=33 <= LB[j]=48 OR UB[j]+1=49 <= LB[i]=32
+[SAT] prune pair (i=155, j=173) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=40 OR UB[j]+1=41 <= LB[i]=33
+[SAT] prune pair (i=155, j=197) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=41 OR UB[j]+1=42 <= LB[i]=33
+[SAT] prune pair (i=155, j=215) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=48 OR UB[j]+1=49 <= LB[i]=33
+[SAT] prune pair (i=173, j=197) by LB/UB/DUR: UB[i]+1=41 <= LB[j]=41 OR UB[j]+1=42 <= LB[i]=40
+[SAT] prune pair (i=173, j=215) by LB/UB/DUR: UB[i]+1=41 <= LB[j]=48 OR UB[j]+1=49 <= LB[i]=40
+[SAT] prune pair (i=197, j=215) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=48 OR UB[j]+1=49 <= LB[i]=41
+[SAT] encode memory resource mem_id=5 : size=6 ports=2
+[SAT] encode memory resource mem_id=4 : size=4 ports=2
+[SAT] prune pair (i=23, j=89) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=40 OR UB[j]+1=49 <= LB[i]=1
+[SAT] encode memory resource mem_id=3 : size=9 ports=2
+[SAT] encode memory resource mem_id=2 : size=6 ports=2
+[SAT] prune pair (i=7, j=141) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=12 <= LB[i]=2
+[SAT] prune pair (i=7, j=181) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=20 <= LB[i]=2
+[SAT] prune pair (i=123, j=141) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=12 <= LB[i]=3
+[SAT] prune pair (i=123, j=181) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=20 <= LB[i]=3
+[SAT] encode memory resource mem_id=1 : size=6 ports=2
+[SAT] prune pair (i=4, j=160) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=12 <= LB[i]=2
+[SAT] prune pair (i=4, j=202) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=20 <= LB[i]=2
+[SAT] prune pair (i=119, j=160) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=12 <= LB[i]=3
+[SAT] prune pair (i=119, j=202) by LB/UB/DUR: UB[i]+1=4 <= LB[j]=4 OR UB[j]+1=20 <= LB[i]=3
+[SAT] encode memory resource mem_id=0 : size=6 ports=2
+[SAT] prune pair (i=1, j=21) by LB/UB/DUR: UB[i]+1=26 <= LB[j]=31 OR UB[j]+1=33 <= LB[i]=1
+[SAT] prune pair (i=1, j=44) by LB/UB/DUR: UB[i]+1=26 <= LB[j]=32 OR UB[j]+1=34 <= LB[i]=1
+[SAT] prune pair (i=1, j=65) by LB/UB/DUR: UB[i]+1=26 <= LB[j]=39 OR UB[j]+1=41 <= LB[i]=1
+[SAT] prune pair (i=1, j=92) by LB/UB/DUR: UB[i]+1=26 <= LB[j]=40 OR UB[j]+1=42 <= LB[i]=1
+[SAT] prune pair (i=1, j=113) by LB/UB/DUR: UB[i]+1=26 <= LB[j]=47 OR UB[j]+1=49 <= LB[i]=1
+[SAT] prune pair (i=21, j=65) by LB/UB/DUR: UB[i]+1=33 <= LB[j]=39 OR UB[j]+1=41 <= LB[i]=31
+[SAT] prune pair (i=21, j=92) by LB/UB/DUR: UB[i]+1=33 <= LB[j]=40 OR UB[j]+1=42 <= LB[i]=31
+[SAT] prune pair (i=21, j=113) by LB/UB/DUR: UB[i]+1=33 <= LB[j]=47 OR UB[j]+1=49 <= LB[i]=31
+[SAT] prune pair (i=44, j=65) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=39 OR UB[j]+1=41 <= LB[i]=32
+[SAT] prune pair (i=44, j=92) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=40 OR UB[j]+1=42 <= LB[i]=32
+[SAT] prune pair (i=44, j=113) by LB/UB/DUR: UB[i]+1=34 <= LB[j]=47 OR UB[j]+1=49 <= LB[i]=32
+[SAT] prune pair (i=65, j=113) by LB/UB/DUR: UB[i]+1=41 <= LB[j]=47 OR UB[j]+1=49 <= LB[i]=39
+[SAT] prune pair (i=92, j=113) by LB/UB/DUR: UB[i]+1=42 <= LB[j]=47 OR UB[j]+1=49 <= LB[i]=40
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 300
+[SDC] Conflict with order (27 -> 128), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 300
+[SDC] Conflict with order (54 -> 128), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 300
+[SDC] Conflict with order (55 -> 13), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 300
+[SDC] Conflict with order (59 -> 128), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 300
+[SDC] Conflict with order (68 -> 41), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 300
+[SDC] Conflict with order (72 -> 128), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 300
+[SDC] Conflict with order (79 -> 129), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 300
+[SDC] Conflict with order (84 -> 142), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 303
+[SDC] Conflict with order (84 -> 161), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 303
+[SDC] Conflict with order (86 -> 39), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 303
+[SDC] Conflict with order (97 -> 130), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 303
+[SDC] Conflict with order (102 -> 128), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 303
+[SDC] Conflict with order (103 -> 129), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 303
+[SDC] Conflict with order (103 -> 147), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 303
+[SDC] Conflict with order (107 -> 128), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 303
+[SDC] Conflict with order (108 -> 17), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 303
+[SDC] Conflict with order (108 -> 132), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 303
+[SDC] Conflict with order (108 -> 148), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 303
+[SDC] Conflict with order (109 -> 131), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 303
+[SDC] Conflict with order (115 -> 128), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 303
+[SDC] Conflict with order (123 -> 128), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 303
+[SDC] Conflict with order (129 -> 13), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 303
+[SDC] Conflict with order (129 -> 79), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 312
+[SDC] Conflict with order (79 -> 33), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 312
+[SDC] Conflict with order (103 -> 33), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 312
+[SDC] Conflict with order (130 -> 60), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 312
+[SDC] Conflict with order (130 -> 97), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 316
+[SDC] Conflict with order (97 -> 17), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 316
+[SDC] Conflict with order (97 -> 19), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 316
+[SDC] Conflict with order (108 -> 97), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 316
+[SDC] Conflict with order (147 -> 13), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 315
+[SDC] Conflict with order (147 -> 167), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 315
+[SDC] Conflict with order (148 -> 132), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 315
+[SDC] Conflict with order (132 -> 148), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 316
+[SDC] Conflict with order (148 -> 28), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 316
+[SDC] Conflict with order (161 -> 124), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 316
+[SDC] Conflict with order (167 -> 79), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 316
+[SDC] Conflict with order (167 -> 147), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 318
+[SDC] Conflict with order (173 -> 41), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 318
+[SDC] Conflict with order (176 -> 92), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 318
+[SDC] Conflict with order (188 -> 55), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 318
+[SDC] Conflict with order (188 -> 129), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 318
+[SDC] Conflict with order (188 -> 147), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 318
+[SDC] Conflict with order (189 -> 182), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 318
+[SDC] Conflict with order (189 -> 203), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 318
+[SDC] Conflict with order (190 -> 211), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 318
+[SDC] Conflict with order (194 -> 215), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 318
+[SDC] Conflict with order (209 -> 13), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 317
+[SDC] Conflict with order (209 -> 33), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 317
+[SDC] Conflict with order (209 -> 79), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 317
+[SDC] Conflict with order (209 -> 167), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 317
+[SDC] Conflict with order (209 -> 188), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 316
+[SDC] Conflict with order (211 -> 190), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 318
+[SDC] Conflict with order (190 -> 85), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 318
+[SDC] Conflict with order (190 -> 169), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 318
+[SDC] Conflict with order (215 -> 194), forbidding this order and retrying SAT.
+[SAT] SAT solve result: SAT
+[SAT] Number of true orders: 318
+[SDC] All orders accepted under bound=86, extracting schedule...
+[SCHEDULE] Stmt 0 : start_cycle = 1
+[SCHEDULE] Stmt 1 : start_cycle = 2
+[SCHEDULE] Stmt 2 : start_cycle = 2
+[SCHEDULE] Stmt 3 : start_cycle = 2
+[SCHEDULE] Stmt 4 : start_cycle = 3
+[SCHEDULE] Stmt 5 : start_cycle = 1
+[SCHEDULE] Stmt 6 : start_cycle = 86
+[SCHEDULE] Stmt 7 : start_cycle = 4
+[SCHEDULE] Stmt 8 : start_cycle = 8
+[SCHEDULE] Stmt 9 : start_cycle = 1
+[SCHEDULE] Stmt 10 : start_cycle = 4
+[SCHEDULE] Stmt 11 : start_cycle = 4
+[SCHEDULE] Stmt 12 : start_cycle = 5
+[SCHEDULE] Stmt 13 : start_cycle = 14
+[SCHEDULE] Stmt 14 : start_cycle = 1
+[SCHEDULE] Stmt 15 : start_cycle = 86
+[SCHEDULE] Stmt 16 : start_cycle = 6
+[SCHEDULE] Stmt 17 : start_cycle = 20
+[SCHEDULE] Stmt 18 : start_cycle = 26
+[SCHEDULE] Stmt 19 : start_cycle = 30
+[SCHEDULE] Stmt 20 : start_cycle = 1
+[SCHEDULE] Stmt 21 : start_cycle = 36
+[SCHEDULE] Stmt 22 : start_cycle = 1
+[SCHEDULE] Stmt 23 : start_cycle = 7
+[SCHEDULE] Stmt 24 : start_cycle = 1
+[SCHEDULE] Stmt 25 : start_cycle = 86
+[SCHEDULE] Stmt 26 : start_cycle = 14
+[SCHEDULE] Stmt 27 : start_cycle = 15
+[SCHEDULE] Stmt 28 : start_cycle = 16
+[SCHEDULE] Stmt 29 : start_cycle = 1
+[SCHEDULE] Stmt 30 : start_cycle = 86
+[SCHEDULE] Stmt 31 : start_cycle = 86
+[SCHEDULE] Stmt 32 : start_cycle = 21
+[SCHEDULE] Stmt 33 : start_cycle = 22
+[SCHEDULE] Stmt 34 : start_cycle = 1
+[SCHEDULE] Stmt 35 : start_cycle = 86
+[SCHEDULE] Stmt 36 : start_cycle = 27
+[SCHEDULE] Stmt 37 : start_cycle = 28
+[SCHEDULE] Stmt 38 : start_cycle = 36
+[SCHEDULE] Stmt 39 : start_cycle = 40
+[SCHEDULE] Stmt 40 : start_cycle = 1
+[SCHEDULE] Stmt 41 : start_cycle = 68
+[SCHEDULE] Stmt 42 : start_cycle = 1
+[SCHEDULE] Stmt 43 : start_cycle = 36
+[SCHEDULE] Stmt 44 : start_cycle = 37
+[SCHEDULE] Stmt 45 : start_cycle = 1
+[SCHEDULE] Stmt 46 : start_cycle = 86
+[SCHEDULE] Stmt 47 : start_cycle = 86
+[SCHEDULE] Stmt 48 : start_cycle = 33
+[SCHEDULE] Stmt 49 : start_cycle = 34
+[SCHEDULE] Stmt 50 : start_cycle = 1
+[SCHEDULE] Stmt 51 : start_cycle = 86
+[SCHEDULE] Stmt 52 : start_cycle = 86
+[SCHEDULE] Stmt 53 : start_cycle = 30
+[SCHEDULE] Stmt 54 : start_cycle = 31
+[SCHEDULE] Stmt 55 : start_cycle = 40
+[SCHEDULE] Stmt 56 : start_cycle = 1
+[SCHEDULE] Stmt 57 : start_cycle = 86
+[SCHEDULE] Stmt 58 : start_cycle = 86
+[SCHEDULE] Stmt 59 : start_cycle = 32
+[SCHEDULE] Stmt 60 : start_cycle = 46
+[SCHEDULE] Stmt 61 : start_cycle = 59
+[SCHEDULE] Stmt 62 : start_cycle = 71
+[SCHEDULE] Stmt 63 : start_cycle = 1
+[SCHEDULE] Stmt 64 : start_cycle = 86
+[SCHEDULE] Stmt 65 : start_cycle = 77
+[SCHEDULE] Stmt 66 : start_cycle = 1
+[SCHEDULE] Stmt 67 : start_cycle = 86
+[SCHEDULE] Stmt 68 : start_cycle = 69
+[SCHEDULE] Stmt 69 : start_cycle = 1
+[SCHEDULE] Stmt 70 : start_cycle = 86
+[SCHEDULE] Stmt 71 : start_cycle = 32
+[SCHEDULE] Stmt 72 : start_cycle = 33
+[SCHEDULE] Stmt 73 : start_cycle = 34
+[SCHEDULE] Stmt 74 : start_cycle = 1
+[SCHEDULE] Stmt 75 : start_cycle = 86
+[SCHEDULE] Stmt 76 : start_cycle = 86
+[SCHEDULE] Stmt 77 : start_cycle = 86
+[SCHEDULE] Stmt 78 : start_cycle = 36
+[SCHEDULE] Stmt 79 : start_cycle = 46
+[SCHEDULE] Stmt 80 : start_cycle = 1
+[SCHEDULE] Stmt 81 : start_cycle = 86
+[SCHEDULE] Stmt 82 : start_cycle = 86
+[SCHEDULE] Stmt 83 : start_cycle = 37
+[SCHEDULE] Stmt 84 : start_cycle = 57
+[SCHEDULE] Stmt 85 : start_cycle = 63
+[SCHEDULE] Stmt 86 : start_cycle = 79
+[SCHEDULE] Stmt 87 : start_cycle = 1
+[SCHEDULE] Stmt 88 : start_cycle = 86
+[SCHEDULE] Stmt 89 : start_cycle = 85
+[SCHEDULE] Stmt 90 : start_cycle = 1
+[SCHEDULE] Stmt 91 : start_cycle = 77
+[SCHEDULE] Stmt 92 : start_cycle = 78
+[SCHEDULE] Stmt 93 : start_cycle = 1
+[SCHEDULE] Stmt 94 : start_cycle = 86
+[SCHEDULE] Stmt 95 : start_cycle = 86
+[SCHEDULE] Stmt 96 : start_cycle = 38
+[SCHEDULE] Stmt 97 : start_cycle = 52
+[SCHEDULE] Stmt 98 : start_cycle = 1
+[SCHEDULE] Stmt 99 : start_cycle = 86
+[SCHEDULE] Stmt 100 : start_cycle = 86
+[SCHEDULE] Stmt 101 : start_cycle = 33
+[SCHEDULE] Stmt 102 : start_cycle = 34
+[SCHEDULE] Stmt 103 : start_cycle = 58
+[SCHEDULE] Stmt 104 : start_cycle = 1
+[SCHEDULE] Stmt 105 : start_cycle = 86
+[SCHEDULE] Stmt 106 : start_cycle = 86
+[SCHEDULE] Stmt 107 : start_cycle = 35
+[SCHEDULE] Stmt 108 : start_cycle = 69
+[SCHEDULE] Stmt 109 : start_cycle = 75
+[SCHEDULE] Stmt 110 : start_cycle = 79
+[SCHEDULE] Stmt 111 : start_cycle = 1
+[SCHEDULE] Stmt 112 : start_cycle = 86
+[SCHEDULE] Stmt 113 : start_cycle = 85
+[SCHEDULE] Stmt 114 : start_cycle = 64
+[SCHEDULE] Stmt 115 : start_cycle = 36
+[SCHEDULE] Stmt 116 : start_cycle = 1
+[SCHEDULE] Stmt 117 : start_cycle = 86
+[SCHEDULE] Stmt 118 : start_cycle = 86
+[SCHEDULE] Stmt 119 : start_cycle = 39
+[SCHEDULE] Stmt 120 : start_cycle = 86
+[SCHEDULE] Stmt 121 : start_cycle = 86
+[SCHEDULE] Stmt 122 : start_cycle = 86
+[SCHEDULE] Stmt 123 : start_cycle = 37
+[SCHEDULE] Stmt 124 : start_cycle = 40
+[SCHEDULE] Stmt 125 : start_cycle = 86
+[SCHEDULE] Stmt 126 : start_cycle = 7
+[SCHEDULE] Stmt 127 : start_cycle = 7
+[SCHEDULE] Stmt 128 : start_cycle = 8
+[SCHEDULE] Stmt 129 : start_cycle = 46
+[SCHEDULE] Stmt 130 : start_cycle = 53
+[SCHEDULE] Stmt 131 : start_cycle = 59
+[SCHEDULE] Stmt 132 : start_cycle = 63
+[SCHEDULE] Stmt 133 : start_cycle = 1
+[SCHEDULE] Stmt 134 : start_cycle = 69
+[SCHEDULE] Stmt 135 : start_cycle = 1
+[SCHEDULE] Stmt 136 : start_cycle = 38
+[SCHEDULE] Stmt 137 : start_cycle = 1
+[SCHEDULE] Stmt 138 : start_cycle = 86
+[SCHEDULE] Stmt 139 : start_cycle = 86
+[SCHEDULE] Stmt 140 : start_cycle = 86
+[SCHEDULE] Stmt 141 : start_cycle = 39
+[SCHEDULE] Stmt 142 : start_cycle = 40
+[SCHEDULE] Stmt 143 : start_cycle = 1
+[SCHEDULE] Stmt 144 : start_cycle = 86
+[SCHEDULE] Stmt 145 : start_cycle = 82
+[SCHEDULE] Stmt 146 : start_cycle = 44
+[SCHEDULE] Stmt 147 : start_cycle = 52
+[SCHEDULE] Stmt 148 : start_cycle = 62
+[SCHEDULE] Stmt 149 : start_cycle = 68
+[SCHEDULE] Stmt 150 : start_cycle = 72
+[SCHEDULE] Stmt 151 : start_cycle = 1
+[SCHEDULE] Stmt 152 : start_cycle = 78
+[SCHEDULE] Stmt 153 : start_cycle = 1
+[SCHEDULE] Stmt 154 : start_cycle = 86
+[SCHEDULE] Stmt 155 : start_cycle = 70
+[SCHEDULE] Stmt 156 : start_cycle = 1
+[SCHEDULE] Stmt 157 : start_cycle = 86
+[SCHEDULE] Stmt 158 : start_cycle = 86
+[SCHEDULE] Stmt 159 : start_cycle = 86
+[SCHEDULE] Stmt 160 : start_cycle = 45
+[SCHEDULE] Stmt 161 : start_cycle = 46
+[SCHEDULE] Stmt 162 : start_cycle = 1
+[SCHEDULE] Stmt 163 : start_cycle = 86
+[SCHEDULE] Stmt 164 : start_cycle = 86
+[SCHEDULE] Stmt 165 : start_cycle = 50
+[SCHEDULE] Stmt 166 : start_cycle = 51
+[SCHEDULE] Stmt 167 : start_cycle = 52
+[SCHEDULE] Stmt 168 : start_cycle = 61
+[SCHEDULE] Stmt 169 : start_cycle = 67
+[SCHEDULE] Stmt 170 : start_cycle = 71
+[SCHEDULE] Stmt 171 : start_cycle = 1
+[SCHEDULE] Stmt 172 : start_cycle = 86
+[SCHEDULE] Stmt 173 : start_cycle = 77
+[SCHEDULE] Stmt 174 : start_cycle = 1
+[SCHEDULE] Stmt 175 : start_cycle = 86
+[SCHEDULE] Stmt 176 : start_cycle = 79
+[SCHEDULE] Stmt 177 : start_cycle = 1
+[SCHEDULE] Stmt 178 : start_cycle = 86
+[SCHEDULE] Stmt 179 : start_cycle = 86
+[SCHEDULE] Stmt 180 : start_cycle = 86
+[SCHEDULE] Stmt 181 : start_cycle = 51
+[SCHEDULE] Stmt 182 : start_cycle = 52
+[SCHEDULE] Stmt 183 : start_cycle = 1
+[SCHEDULE] Stmt 184 : start_cycle = 86
+[SCHEDULE] Stmt 185 : start_cycle = 86
+[SCHEDULE] Stmt 186 : start_cycle = 86
+[SCHEDULE] Stmt 187 : start_cycle = 63
+[SCHEDULE] Stmt 188 : start_cycle = 64
+[SCHEDULE] Stmt 189 : start_cycle = 70
+[SCHEDULE] Stmt 190 : start_cycle = 76
+[SCHEDULE] Stmt 191 : start_cycle = 80
+[SCHEDULE] Stmt 192 : start_cycle = 1
+[SCHEDULE] Stmt 193 : start_cycle = 86
+[SCHEDULE] Stmt 194 : start_cycle = 86
+[SCHEDULE] Stmt 195 : start_cycle = 1
+[SCHEDULE] Stmt 196 : start_cycle = 86
+[SCHEDULE] Stmt 197 : start_cycle = 79
+[SCHEDULE] Stmt 198 : start_cycle = 1
+[SCHEDULE] Stmt 199 : start_cycle = 86
+[SCHEDULE] Stmt 200 : start_cycle = 86
+[SCHEDULE] Stmt 201 : start_cycle = 86
+[SCHEDULE] Stmt 202 : start_cycle = 57
+[SCHEDULE] Stmt 203 : start_cycle = 58
+[SCHEDULE] Stmt 204 : start_cycle = 1
+[SCHEDULE] Stmt 205 : start_cycle = 86
+[SCHEDULE] Stmt 206 : start_cycle = 86
+[SCHEDULE] Stmt 207 : start_cycle = 49
+[SCHEDULE] Stmt 208 : start_cycle = 50
+[SCHEDULE] Stmt 209 : start_cycle = 64
+[SCHEDULE] Stmt 210 : start_cycle = 70
+[SCHEDULE] Stmt 211 : start_cycle = 76
+[SCHEDULE] Stmt 212 : start_cycle = 80
+[SCHEDULE] Stmt 213 : start_cycle = 1
+[SCHEDULE] Stmt 214 : start_cycle = 86
+[SCHEDULE] Stmt 215 : start_cycle = 86

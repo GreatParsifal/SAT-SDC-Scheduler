@@ -6,9 +6,12 @@
 
 class SAT {
 public:
-    SAT(int n_ops);
+    SAT(int n_ops,std::ostream& out_);
 
-    void encode_resource(const std::vector<int>& ops_idx, int limit);
+    void encode_resource(const std::vector<int>& ops_idx, int limit,
+                     const std::vector<int>* LB = nullptr,
+                     const std::vector<int>* UB = nullptr,
+                     const std::vector<int>* DUR = nullptr);
 
     bool solve();
 
@@ -20,6 +23,7 @@ public:
 private:
     int n;
     Minisat::Solver solver;
+    std::ostream& out;
 
     std::vector<std::vector<Minisat::Var>> before;
 

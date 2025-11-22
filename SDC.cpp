@@ -28,14 +28,15 @@ SDC::SDC(DFG* dfg_,
     base_dist.assign(total_n, 0);
     edges.clear();
     base_edges.clear();
-    edges.reserve(1000);
-    base_edges.reserve(1000);
+    edges.reserve(10000);
+    base_edges.reserve(10000);
 }
 
 void SDC::add_edge(int from, int to, int w) {
     //out << "SDC Edge: " << from << " -> " << to << " , w=" << w << " ";
     edges.push_back({from, to, w});
 }
+
 
 void SDC::init() {
     edges.clear();
@@ -66,7 +67,9 @@ void SDC::init() {
         }
         else{
             if(get_latency(s) > 0) add_edge(first, s, -get_latency(s) + 1);
-            else add_edge(first, s, 0);
+            else {
+                add_edge(first, s, 0);
+            }
         }
 
         std::vector<double> best(n, INF_D);
@@ -178,9 +181,9 @@ bool SDC::set_start_bound(int L) {
     edges = base_edges;
     for (int i = 0; i < n; ++i) {
         // 上界： x_i - x_super <= inner_bound
-        add_edge(super_idx, i, inner_bound - get_latency(i));
+        add_edge(super_idx, i, inner_bound - get_latency(i)+1);
         // 下界： x_super - x_i <= 0  -->  强制 x_i >= x_super
-        add_edge(i, super_idx, 0);
+        add_edge(i, super_idx,0);
     }
 
     // 运行 BF 检测并获得 new_dist（长度 = total_n）
@@ -401,31 +404,35 @@ void SDC::get_start_cycles(std::vector<int>& sc) const {
     sc.assign(n, 0);
     if (n == 0) return;
 
-    // 识别参与约束的节点（use total_n）
-    std::vector<char> constrained(total_n, 0);
+    // 1) 识别参与约束的节点（**排除** super_idx 的边）
+    std::vector<char> constrained(n, 0);
     for (const auto &e : edges) {
-        if (e.from >= 0 && e.from < total_n) constrained[e.from] = 1;
-        if (e.to   >= 0 && e.to   < total_n) constrained[e.to]   = 1;
+        // 只把两个端点都在 0..n-1 范围内的边计入 constrained，
+        // 这样就把 super_idx 的边（用于上界）排除了。
+        if (e.from >= 0 && e.from < n && e.to >= 0 && e.to < n) {
+            constrained[e.from] = 1;
+            constrained[e.to]   = 1;
+        }
     }
 
-    // 找到前 n 节点的最小值并把它移为 0（但通常 super 已为 0）
+    // 2) 计算参与约束节点的最小 dist（只考虑有效 dist 的节点）
     bool any = false;
     int mn = 0;
     for (int i = 0; i < n; ++i) {
         if (!constrained[i]) continue;
-        if (dist[i] >= INF/2) continue;
-        if (!any) { mn = dist[i]; any = true; }
-        else if (dist[i] < mn) mn = dist[i];
+        int dv = dist[i];
+        if (dv >= INF/2) continue;   // 当作不可达/无效，忽略
+        if (!any) { mn = dv; any = true; }
+        else if (dv < mn) mn = dv;
     }
-    if (!any) mn = 0;
+    if (!any) mn = 0; // 若没有任何“真实受约束”的节点，基准置为 0
 
-    int offset = -mn;
+    // 3) 对参与约束的节点按 dist - mn；未约束节点设为 0
     for (int i = 0; i < n; ++i) {
-        if (constrained[i] && dist[i] < INF/2) sc[i] = dist[i] + offset;
-        else sc[i] = 0; // 未约束的暂时 0
+        if (constrained[i] && dist[i] < INF/2) sc[i] = dist[i] - mn;
+        else sc[i] = 0;
     }
 
-    // 最后整体 +1（保持原设计，且若 set_start_bound(L) 使用语义 A，则结果落在 [1, L]）
+    // 4) 最后整体 +1（和你原来接口语义一致，输出范围对 set_start_bound(L) 应落在 [1, L]）
     for (int i = 0; i < n; ++i) sc[i] += 1;
 }
-
