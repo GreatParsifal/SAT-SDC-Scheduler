@@ -34,6 +34,8 @@ public:
 
     void get_start_cycles(std::vector<int>& sc) const;
 
+    bool set_start_bound(int L);      // 约束: start_i <= L
+    void clear_start_bound();
 private:
     DFG* dfg;
     const std::vector<Op*>& ops;
@@ -42,6 +44,11 @@ private:
     std::ostream& out;
 
     int n;                      // 变量个数 = stmt 数
+    int super_idx;
+    int total_n;
+    bool bound_active;
+    int bound_value;
+
     std::vector<Edge> edges;    
     std::vector<int> dist;
     

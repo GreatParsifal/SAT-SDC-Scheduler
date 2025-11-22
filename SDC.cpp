@@ -20,14 +20,20 @@ SDC::SDC(DFG* dfg_,
       out(out_)
     {
     n = dfg->stmts.size();
-    dist.assign(n, 0);
-    edges.assign(10000, {0,0,0});
-    base_edges.assign(10000, {0,0,0});
-    base_dist.assign(n, 0);
+    super_idx = n;
+    total_n   = n + 1;
+    bound_active = false;
+    bound_value  = -1;
+    dist.assign(total_n, 0);
+    base_dist.assign(total_n, 0);
+    edges.clear();
+    base_edges.clear();
+    edges.reserve(1000);
+    base_edges.reserve(1000);
 }
 
 void SDC::add_edge(int from, int to, int w) {
-    out << "SDC Edge: " << from << " -> " << to << " , w=" << w << " ";
+    //out << "SDC Edge: " << from << " -> " << to << " , w=" << w << " ";
     edges.push_back({from, to, w});
 }
 
@@ -131,6 +137,7 @@ void SDC::init() {
         add_edge(o1-1, o0-1, d);
         out << endl;
     }
+    
 
     // 4. 跑 Bellman-Ford
     const int INF = std::numeric_limits<int>::max() / 4;
@@ -138,7 +145,7 @@ void SDC::init() {
     std::fill(dist.begin(), dist.end(), 0);
 
     bool updated = true;
-    for (int it = 0; it < n - 1 && updated; ++it) {
+    for (int it = 0; it < total_n - 1 && updated; ++it) {
         updated = false;
         for (const auto& e : edges) {
             int u = e.from;
@@ -156,6 +163,66 @@ void SDC::init() {
     base_edges = edges;
     base_dist = dist;
 }
+
+bool SDC::set_start_bound(int L) {
+    if (L <= 0) return false; // 不合法
+    bound_active = true;
+    bound_value  = L;
+
+    auto get_latency = [&](int x) -> int {
+        return dfg->stmts[x]->op->latency;
+    };
+    int inner_bound = L - 1; // 因为 get_start_cycles 会 +1，我们保证最终 ≤ L
+
+    // 从基线开始插入 bound 边（不修改原始 base_edges）
+    edges = base_edges;
+    for (int i = 0; i < n; ++i) {
+        // 上界： x_i - x_super <= inner_bound
+        add_edge(super_idx, i, inner_bound - get_latency(i));
+        // 下界： x_super - x_i <= 0  -->  强制 x_i >= x_super
+        add_edge(i, super_idx, 0);
+    }
+
+    // 运行 BF 检测并获得 new_dist（长度 = total_n）
+    std::vector<int> new_dist;
+    bool ok = bellman_ford_with_detection(new_dist);
+    if (!ok) {
+        // bound 导致负环 -> 回滚
+        edges = base_edges;
+        dist = base_dist;
+        bound_active = false;
+        bound_value = -1;
+        return false;
+    }
+
+    // 把 new_dist 相对于 super 归一化，保证 x_super == 0
+    int s = super_idx;
+    int offset = 0;
+    if (s >= 0 && s < (int)new_dist.size()) offset = new_dist[s];
+    for (int i = 0; i < (int)new_dist.size(); ++i) new_dist[i] -= offset;
+
+    // 写回 dist（包含 super），并把带 bound 的图设为新的基线
+    dist = new_dist;
+    base_edges = edges;
+    base_dist  = dist;
+
+    out << "[SDC] set_start_bound(" << L << ") succeeded. inner_bound=" << inner_bound
+        << ", super_offset=" << offset << "\n";
+    // debug: 检查一下归一化后是否满足 bound
+    int max_vi = std::numeric_limits<int>::min();
+    for (int i = 0; i < n; ++i) if (dist[i] > max_vi) max_vi = dist[i];
+    out << "[SDC] post-bound max dist (internal x_i) = " << max_vi << " (should be <= " << inner_bound << ")\n";
+    return true;
+}
+
+void SDC::clear_start_bound() {
+    bound_active = false;
+    bound_value  = -1;
+    // 如果想恢复到原始无 bound 基线，需要在 set_start_bound 前保存原 base_edges/base_dist。
+    // 这里我们简单地重新 init()（成本较高但保证正确一致）。
+    init();
+}
+
 
 bool SDC::has_negative_cycle(const std::vector<int>& d) {
     const int INF = std::numeric_limits<int>::max() / 4;
@@ -178,7 +245,7 @@ void SDC::restore_base() {
 }
 bool SDC::bellman_ford_with_detection(std::vector<int>& out_dist) {
     const long long INFLL = std::numeric_limits<long long>::max() / 4;
-    int N = n;
+    int N = total_n;
     // 我们将做标准的 Bellman-Ford：先把所有 d = 0，并在 edges 上松弛 N 次
     // 更稳妥的做法是引入一个 super-node s'，并把 s'->i 的边加入（weight 0），
     // 然后对 N (or N+1) 个节点跑 BF。为简单，我们用 d[i]=0 的方式（等价）。
@@ -270,7 +337,7 @@ bool SDC::solve(int u, int v, int c) {
 
     // 5) 重权通过：构建重权图邻接表并用 Dijkstra 从 v 出发（增量松弛）
     struct AdjEdge { int to; int w; };
-    std::vector<std::vector<AdjEdge>> adj(n);
+    std::vector<std::vector<AdjEdge>> adj(total_n);
     for (const auto &e : edges) {
         int from = e.from;
         int to   = e.to;
@@ -283,7 +350,7 @@ bool SDC::solve(int u, int v, int c) {
     }
 
     // dprime 存重权图上从 v 出发到各点的距离（int 使用 INF）
-    std::vector<int> dprime(n, INF);
+    std::vector<int> dprime(total_n, INF);
     int s = v;
     dprime[s] = 0;
     using P = std::pair<int,int>;
@@ -328,115 +395,37 @@ bool SDC::solve(int u, int v, int c) {
         return true;
     }
 }
-/* bool SDC::solve(int u, int v, int c) {
-    
-    add_edge(v, u, c);
 
-    const int INF = std::numeric_limits<int>::max() / 4;
-
-    std::vector<int> V = dist;
-
-    struct AdjEdge {
-        int to;
-        int w;
-    };
-    
-    std::vector<std::vector<AdjEdge>> adj(n);
-    for (const auto& e : edges) {
-        int from = e.from;
-        int to   = e.to;
-        int w    = e.w;
-        int cp = w + V[from] - V[to];
-        adj[from].push_back({to, cp});
-    }
-    out << 1 << endl;
-    std::vector<int> dprime(n, INF);
-    int s = v;
-    dprime[s] = 0;
-    using P = std::pair<int, int>;
-    std::priority_queue<P, std::vector<P>, std::greater<P>> pq;
-    pq.push({0, s});
-    
-    while (!pq.empty()) {
-        auto [dist_u, u] = pq.top();
-        pq.pop();
-        if (dist_u != dprime[u]) continue;
-
-        for (const auto& e : adj[u]) {
-            int to = e.to;
-            int w  = e.w;
-            if (dprime[to] > dprime[u] + w) {
-                dprime[to] = dprime[u] + w;
-                pq.push({dprime[to], to});
-            }
-        }
-    }
-    out << 2 << endl;
-    int Du = dist[u];
-    int Vv = V[v];
-
-    for (int x = 0; x < n; ++x) {
-        if (dprime[x] == INF) {
-            // v 到 x 不可达，这条新约束对 x 不产生更紧的上界
-            continue;
-        }
-        int dvx = dprime[x] + V[x] - Vv; // d(v->x)
-        int candidate = Du + dvx + c;                           // D(u)+d(v->x)+c
-
-        if (candidate < dist[x]) {
-            if (candidate < -INF) candidate = -INF;
-            if (candidate >  INF) candidate =  INF;
-            dist[x] = (int)candidate;
-        }
-    }
-
-     if (has_negative_cycle(dist)) {
-        
-        return false;
-    }
-    return true;
-}*/
 void SDC::get_start_cycles(std::vector<int>& sc) const {
     const int INF = std::numeric_limits<int>::max()/4;
-    sc = dist;
-    for(int i = 0; i < n; i++){
-        out  << "dist" << i << "=" << dist[i] << endl;
-    }
+    sc.assign(n, 0);
     if (n == 0) return;
 
-    // 识别参与约束的节点
-    std::vector<char> constrained(n, 0);
-    for (auto &e : edges) {
-        constrained[e.from] = 1;
-        constrained[e.to]   = 1;
+    // 识别参与约束的节点（use total_n）
+    std::vector<char> constrained(total_n, 0);
+    for (const auto &e : edges) {
+        if (e.from >= 0 && e.from < total_n) constrained[e.from] = 1;
+        if (e.to   >= 0 && e.to   < total_n) constrained[e.to]   = 1;
     }
 
-    // 统计有效最小值（忽略“未约束”并且是 INF 的点）
-    bool first = true;
+    // 找到前 n 节点的最小值并把它移为 0（但通常 super 已为 0）
+    bool any = false;
     int mn = 0;
     for (int i = 0; i < n; ++i) {
-        if (!constrained[i]) continue; // 不参与边的点延后处理
-        if (sc[i] >= INF/2) continue;  // 若以后用 INF 初始化
-        if (first) { mn = sc[i]; first = false; }
-        else if (sc[i] < mn) mn = sc[i];
+        if (!constrained[i]) continue;
+        if (dist[i] >= INF/2) continue;
+        if (!any) { mn = dist[i]; any = true; }
+        else if (dist[i] < mn) mn = dist[i];
     }
-    if (first) mn = 0; // 所有点都未约束，统一从 0 开始
+    if (!any) mn = 0;
 
     int offset = -mn;
     for (int i = 0; i < n; ++i) {
-        if (constrained[i] && sc[i] < INF/2) {
-            sc[i] += offset;
-        }
+        if (constrained[i] && dist[i] < INF/2) sc[i] = dist[i] + offset;
+        else sc[i] = 0; // 未约束的暂时 0
     }
 
-    // 为未约束点赋默认周期（这里设为 1；也可以设为最大已用周期+1）
-    int max_cycle = 0;
-    for (int i = 0; i < n; ++i) {
-        if (constrained[i] && sc[i] > max_cycle) max_cycle = sc[i];
-    }
-    for (int i = 0; i < n; ++i) {
-        if (!constrained[i]) sc[i] = 1; // 或 max_cycle+1
-        else sc[i] += 1; // 原设计：整体 +1
-    }
+    // 最后整体 +1（保持原设计，且若 set_start_bound(L) 使用语义 A，则结果落在 [1, L]）
+    for (int i = 0; i < n; ++i) sc[i] += 1;
 }
 

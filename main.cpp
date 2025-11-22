@@ -19,6 +19,7 @@ int main(int argc, char** argv) {
     } else {
         schedule_file = stdout;
     }
+    
 
     fflush(stdout);
     DFG dfg;
